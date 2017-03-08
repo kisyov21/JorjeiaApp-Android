@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="JorjeiaAndroidApp.JorjeiaAndroidApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="JorjeiaAndroidApp" android:theme="@android:style/Theme.Material.Light" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="CameraActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CameraActivity" />
+    <activity android:label="CameraIntroActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CameraIntroActivity" />
+    <activity android:icon="@drawable/icon" android:label="JorjeiaAndroidApp" android:name="md5d591c8f9f78c577e6713e8df671ac951.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="NewMissionActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionActivity" />
+    <activity android:label="NewMissionIntroActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionIntroActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="JorjeiaAndroidApp.JorjeiaAndroidApp.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.JorjeiaAndroidApp.JorjeiaAndroidApp" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

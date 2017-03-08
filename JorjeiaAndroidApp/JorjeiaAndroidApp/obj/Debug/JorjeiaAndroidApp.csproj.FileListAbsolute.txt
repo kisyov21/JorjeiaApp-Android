@@ -1,0 +1,97 @@
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.dll
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.pdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.JorjeiaAndroidApp.apk
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.JorjeiaAndroidApp-Signed.apk
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.csprojResolveAssemblyReference.cache
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.dll
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.pdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\bin\JorjeiaAndroidApp.JorjeiaAndroidApp.apk
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\main.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\values\strings.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\icon.png
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\R.cs.flag
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\uploadflags.txt
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Java.Interop.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Mono.Android.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Mono.CSharp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\mscorlib.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Core.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Net.Http.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\logo.png
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\splash.png
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\newmissionintroview.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\newmissionview.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\cameraview.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\cameraintroview.xml
+D:\Repositories\New folder\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.pdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.JorjeiaAndroidApp.apk
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.JorjeiaAndroidApp-Signed.apk
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.csprojResolveAssemblyReference.cache
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.pdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\bin\JorjeiaAndroidApp.JorjeiaAndroidApp.apk
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\newmissionintroview.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\newmissionview.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\cameraview.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\cameraintroview.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\layout\main.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\values\strings.xml
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\icon.png
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\logo.png
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\res\drawable\splash.png
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\R.cs.flag
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\uploadflags.txt
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Java.Interop.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Mono.Android.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Mono.CSharp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\mscorlib.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Core.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Net.Http.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\JorjeiaAndroidApp.dll.mdb
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.dll.mdb
