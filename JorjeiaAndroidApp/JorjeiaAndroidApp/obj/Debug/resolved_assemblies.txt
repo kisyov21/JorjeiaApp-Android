@@ -5,8 +5,16 @@ D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\mscorlib.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Core.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.IO.Compression.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Net.Http.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.Linq.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLite-net.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLitePCLRaw.batteries_green.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLitePCLRaw.batteries_v2.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLitePCLRaw.core.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Threading.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ComponentModel.Composition.dll
@@ -19,6 +27,9 @@ D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Reflection.Extensions.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.CSharp.dll
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Net.Http.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Linq.Expressions.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Globalization.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Threading.Tasks.dll
+D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Resources.ResourceManager.dll

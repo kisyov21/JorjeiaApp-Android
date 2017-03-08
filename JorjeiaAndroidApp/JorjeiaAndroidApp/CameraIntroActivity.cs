@@ -41,7 +41,7 @@ namespace JorjeiaAndroidApp
 
         private void SkipCamera_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(CameraActivity));
+            var intent = new Intent(this, typeof(MissionCreatedActivity));
             StartActivity(intent);
         }
 

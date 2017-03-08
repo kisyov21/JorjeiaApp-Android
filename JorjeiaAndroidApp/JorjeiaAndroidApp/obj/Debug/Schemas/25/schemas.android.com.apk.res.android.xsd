@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2.3.2017 г. 18:08:32</xs:documentation>
+    <xs:documentation>8.3.2017 г. 23:18:11</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17034,11 +17034,17 @@
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
             <xs:enumeration value="@id/about" />
+            <xs:enumeration value="@id/about2" />
             <xs:enumeration value="@id/ageEditTextView" />
             <xs:enumeration value="@id/contacts" />
+            <xs:enumeration value="@id/contacts2" />
+            <xs:enumeration value="@id/currentMission2" />
+            <xs:enumeration value="@id/logoImageView" />
+            <xs:enumeration value="@id/newMission" />
             <xs:enumeration value="@id/newMissionButton" />
             <xs:enumeration value="@id/nextCalendarButton" />
             <xs:enumeration value="@id/nextCButton" />
+            <xs:enumeration value="@id/nextMCButton" />
             <xs:enumeration value="@id/nextNMButton" />
             <xs:enumeration value="@id/nextNMIButton" />
             <xs:enumeration value="@id/rayPictureImageView" />
