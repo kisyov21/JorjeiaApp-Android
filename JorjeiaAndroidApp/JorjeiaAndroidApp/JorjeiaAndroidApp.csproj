@@ -144,6 +144,7 @@
     <Compile Include="CameraIntroActivity.cs" />
     <Compile Include="CurrentMissionActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainActivity2.cs" />
     <Compile Include="MissionCreatedActivity.cs" />
     <Compile Include="NewMissionActivity.cs" />
     <Compile Include="NewMissionIntroActivity.cs" />

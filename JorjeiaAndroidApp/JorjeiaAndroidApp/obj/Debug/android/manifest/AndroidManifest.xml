@@ -17,6 +17,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="MainActivity2" android:name="md5d591c8f9f78c577e6713e8df671ac951.MainActivity2" />
     <activity android:label="MissionCreatedActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.MissionCreatedActivity" />
     <activity android:label="NewMissionActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionActivity" />
     <activity android:label="NewMissionIntroActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionIntroActivity" />

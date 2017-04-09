@@ -15,11 +15,3 @@ D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
 D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-D:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb

@@ -36,13 +36,20 @@ namespace JorjeiaAndroidApp
         private void NextCamera_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CameraActivity));
+            intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission",0));
+            intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin",0));
+            intent.PutExtra("Ages", Intent.GetIntExtra("Ages",0));
             StartActivity(intent);
         }
 
         private void SkipCamera_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MissionCreatedActivity));
+            intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
+            intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
+            intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
             StartActivity(intent);
+            Finish();
         }
 
         private void FindViews()

@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>8.4.2017 г. 18:04:22</xs:documentation>
+    <xs:documentation>9.4.2017 г. 22:18:36</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -350,6 +350,15 @@
     <xs:attribute ref="tools:visibility" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="MultiAutoCompleteTextView" type="MultiAutoCompleteTextView">
@@ -1436,6 +1445,15 @@
     <xs:attribute ref="tools:layout" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
+    <xs:attribute ref="android:layout_margin" />
+    <xs:attribute ref="android:layout_marginLeft" />
+    <xs:attribute ref="android:layout_marginTop" />
+    <xs:attribute ref="android:layout_marginRight" />
+    <xs:attribute ref="android:layout_marginBottom" />
+    <xs:attribute ref="android:layout_marginStart" />
+    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="com.squareup.timessquare.CalendarCellView" type="com.squareup.timessquare.CalendarCellView">

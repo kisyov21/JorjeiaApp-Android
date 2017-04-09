@@ -15,9 +15,22 @@ namespace JorjeiaAndroidApp.Resources.Model
 {
     public class Mission
     {
-        //[PrimaryKey, AutoIncrement]
-        //public int Id { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
         public int hasMission { get; set; }
         public int typeMission { get; set; }
+    }
+
+    public class Schedule
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public bool IsPassed { get; set; }
+        //public Schedule(DateTime date)
+        //{
+        //    this.Date = date;
+        //    this.IsPassed = false;
+        //}
     }
 }

@@ -8,13 +8,6 @@
         android:layout_height="200dp"
         android:src="@drawable/Splash" />
     <Button
-        android:text="buton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonat"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
-    <Button
         android:text="Вашият календар"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

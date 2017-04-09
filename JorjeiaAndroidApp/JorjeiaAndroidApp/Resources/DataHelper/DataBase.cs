@@ -26,6 +26,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
                 {
                     connection.CreateTable<Mission>();
+                    connection.CreateTable<Schedule>();
                     return true;
                 }
             }
@@ -53,6 +54,28 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
+
+        public bool insertIntoTableSchedule(List<Schedule> newSchedule)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    foreach (var item in newSchedule)
+                    {
+                        connection.Insert(item);
+                    }
+                    
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return false;
+            }
+        }
+
         public List<Mission> selectTableMission()
         {
             try
@@ -69,30 +92,29 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        //public bool updateTableMission(Mission mission)
-        //{
-        //    try
-        //    {
-        //        using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
-        //        {
-        //            connection.Query<Mission>("UPDATE Mission set hasMission=?,typeMission=? Where Id=? ", mission.hasMission, mission.typeMission,mission.Id);
-        //            return true;
-        //        }
-        //    }
-        //    catch (SQLiteException ex)
-        //    {
-        //        Log.Info("SQLitEx", ex.Message);
-        //        return false;
-        //    }
-        //}
-
-        public bool deleteTableMission(Mission mission)
+        public List<Schedule> selectTableSchedule()
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
                 {
-                    connection.Delete(mission);
+                    return connection.Table<Schedule>().ToList();
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return null;
+            }
+        }
+
+        public bool updateTableSchedule(DateTime date)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    connection.Query<Mission>("UPDATE Schedule set IsPassed=? Where Date=? ", true, date);
                     return true;
                 }
             }
@@ -103,21 +125,63 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        //public bool selectMissionById(int id)
-        //{
-        //    try
-        //    {
-        //        using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
-        //        {
-        //            connection.Query<Mission>("SELECT * FROM Mission Where Id=? ", id);
-        //            return true;
-        //        }
-        //    }
-        //    catch (SQLiteException ex)
-        //    {
-        //        Log.Info("SQLitEx", ex.Message);
-        //        return false;
-        //    }
-        //}
+        public bool deleteTableSchedule()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    var schedule = connection.Table<Schedule>().ToList();
+                    foreach (var item in schedule)
+                    {
+                        connection.Delete(item);
+                    }
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return false;
+            }
+        }
+
+        public bool deleteTableMission()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    var mission = connection.Table<Mission>().ToList();
+                    foreach (var item in mission)
+                    {
+                        connection.Delete(item);
+                    }
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return false;
+            }
+        }
+
+        public List<Schedule> selectScheduleByDate(DateTime date)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    var select = connection.Query<Schedule>("SELECT * FROM Schedule Where Date=? ", date);
+                    return select;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return null;
+            }
+        }
     }
 }

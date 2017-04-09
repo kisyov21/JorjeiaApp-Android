@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using JorjeiaAndroidApp.Utility;
+using JorjeiaAndroidApp.Resources.Model;
 
 namespace JorjeiaAndroidApp
 {
@@ -26,6 +27,9 @@ namespace JorjeiaAndroidApp
         private string missions = "Мисия 1";
         private string gender = "Мъж";
 
+        private int typeOfMission = 1;
+        private int typeOfSkin = 1;
+        private int years = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -51,11 +55,13 @@ namespace JorjeiaAndroidApp
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            var mission = new NewMission();
-            mission = CollectInfo();
-            Methods.Calculate(mission);
+            years = Convert.ToInt32(age.Text);
             var intent = new Intent(this, typeof(CameraIntroActivity));
+            intent.PutExtra("TypeOfMission", typeOfMission);
+            intent.PutExtra("TypeOfSkin", typeOfSkin);
+            intent.PutExtra("Ages", years);
             StartActivity(intent);
+            Finish();
         }
 
         private NewMission CollectInfo()
@@ -99,12 +105,61 @@ namespace JorjeiaAndroidApp
         {
             Spinner spinner = (Spinner)sender;
             missions = spinner.GetItemAtPosition(e.Position).ToString();
+            TypeOfMission(missions);
         }
 
         private void skinSpinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
             skin = spinner.GetItemAtPosition(e.Position).ToString();
+            TypeOfSkin(skin);
+        }
+
+        private void TypeOfMission(string mission)
+        { 
+            switch (mission)
+            {
+                case "Мисия 1":
+                    typeOfMission = 1;
+                    break;
+                case "Мисия 2":
+                    typeOfMission = 2;
+                    break;
+                case "Мисия 3":
+                    typeOfMission = 3;
+                    break;
+                case "Мисии 1+2":
+                    typeOfMission = 4;
+                    break;
+                case "Мисии 1+3":
+                    typeOfMission = 5;
+                    break;
+                case "Мисии 2+3":
+                    typeOfMission = 6;
+                    break;
+                case "Мисии 1+2+3":
+                    typeOfMission = 7;
+                    break;
+                case "Мисия 1 FOR MEN":
+                    typeOfMission = 8;
+                    break;
+            }
+        }
+
+        private void TypeOfSkin(string skin)
+        {
+            switch (skin)
+            {
+                case "Суха":
+                    typeOfSkin = 1;
+                    break;
+                case "Нормална":
+                    typeOfSkin = 2;
+                    break;
+                case "Мазна":
+                    typeOfSkin = 3;
+                    break;
+            }
         }
 
         //public void Remind(DateTime dateTime, string title, string message)
