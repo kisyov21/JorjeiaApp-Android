@@ -6,8 +6,11 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="JorjeiaAndroidApp" android:theme="@android:style/Theme.Material.Light" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <receiver android:name="md5d591c8f9f78c577e6713e8df671ac951.AlarmReceiver" />
+    <activity android:configChanges="orientation|screenSize" android:label="CalendarActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CalendarActivity" />
     <activity android:label="CameraActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CameraActivity" />
     <activity android:label="CameraIntroActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CameraIntroActivity" />
+    <activity android:label="CurrentMissionActivity" android:name="md5d591c8f9f78c577e6713e8df671ac951.CurrentMissionActivity" />
     <activity android:icon="@drawable/icon" android:label="JorjeiaAndroidApp" android:name="md5d591c8f9f78c577e6713e8df671ac951.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

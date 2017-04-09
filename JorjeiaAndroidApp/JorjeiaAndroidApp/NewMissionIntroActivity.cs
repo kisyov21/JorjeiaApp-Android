@@ -28,27 +28,13 @@ namespace JorjeiaAndroidApp
 
         private void FindViews()
         {
-            newMission = FindViewById<Button>(Resource.Id.nextNMIButton);
-            // aboutButton = FindViewById<Button>(Resource.Id.about);
-            //contactsButton = FindViewById<Button>(Resource.Id.contacts);
+            newMission = FindViewById<Button>(Resource.Id.nextNMIButton);            
         }
 
         private void HandleEvents()
         {
             newMission.Click += NewMissionButton_Click;
-            //aboutButton.Click += AboutButton_Click;
-            //contactsButton.Click += ContactsButton_Click;
         }
-
-        //private void ContactsButton_Click(object sender, EventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //private void AboutButton_Click(object sender, EventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         private void NewMissionButton_Click(object sender, EventArgs e)
         {
