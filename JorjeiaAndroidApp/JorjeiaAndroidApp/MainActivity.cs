@@ -98,6 +98,20 @@ namespace JorjeiaAndroidApp
         private void HandleEvents2()
         {
             calendarButton.Click += CalendarButton_Click;
+            mainMenu2Button.Click += MainMenu_Click;
+            cameraButton.Click += Camera_Click;
+        }
+
+        private void MainMenu_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(MainActivity2));
+            StartActivity(intent);
+        }
+
+        private void Camera_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(CameraActivity));
+            StartActivity(intent);
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)

@@ -108,6 +108,22 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
+        public List<Schedule> selectActiveDatesSchedule()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    return connection.Table<Schedule>().Where(s => s.IsPassed==true).ToList();
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return null;
+            }
+        }
+
         public bool updateTableSchedule(DateTime date)
         {
             try

@@ -9,9 +9,9 @@ namespace Calendar.Views
 {
     public class App : Application
     {
-        public App()
+        public App(List<DateTime> list)
         {
-            MainPage = new Calendar();
+            MainPage = new Calendar(list);
         }
         protected override void OnStart()
         {
