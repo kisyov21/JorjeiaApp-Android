@@ -12,13 +12,13 @@ using Android.Widget;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "MainActivity2")]
+    [Activity(Label = "MainActivity2", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class MainActivity2 : Activity
     {
         private Button newMission2Button;
         private Button currentMissionButton;
-        //private Button about2Button;
-        //private Button contacts2Button;
+        private Button about2Button;
+        private Button contacts2Button;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,8 +32,8 @@ namespace JorjeiaAndroidApp
         {
             newMission2Button.Click += NewMissionButton_Click;
             currentMissionButton.Click += CurrentMissionButton_Click;
-            //aboutButton.Click += AboutButton_Click;
-            //contactsButton.Click += ContactsButton_Click;
+            about2Button.Click += AboutButton_Click;
+            contacts2Button.Click += ContactsButton_Click;
         }
 
 
@@ -42,8 +42,8 @@ namespace JorjeiaAndroidApp
         {
             currentMissionButton = FindViewById<Button>(Resource.Id.currentMissionButton);
             newMission2Button = FindViewById<Button>(Resource.Id.newMission2Button);
-            //contacts2Button = FindViewById<Button>(Resource.Id.contacts2Button);
-            //about2Button = FindViewById<Button>(Resource.Id.about2Button);
+            contacts2Button = FindViewById<Button>(Resource.Id.contacts2Button);
+            about2Button = FindViewById<Button>(Resource.Id.about2Button);
 
         }
 
@@ -56,6 +56,18 @@ namespace JorjeiaAndroidApp
         private void CurrentMissionButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CurrentMissionActivity));
+            StartActivity(intent);
+        }
+
+        private void ContactsButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ContactActivity));
+            StartActivity(intent);
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AboutActivity));
             StartActivity(intent);
         }
     }

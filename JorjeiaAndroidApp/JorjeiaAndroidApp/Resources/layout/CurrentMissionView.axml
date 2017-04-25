@@ -25,7 +25,7 @@
         android:text="Направете си снимка"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cameraBtn"
+        android:id="@+id/cameracCurrBtn"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <Button

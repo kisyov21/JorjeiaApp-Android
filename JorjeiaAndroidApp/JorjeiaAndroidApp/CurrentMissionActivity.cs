@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "CurrentMissionActivity")]
+    [Activity(Label = "CurrentMissionActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class CurrentMissionActivity : Activity
     {
         private Button calendarButton;
@@ -30,6 +30,8 @@ namespace JorjeiaAndroidApp
         private void HandleEvent()
         {
             calendarButton.Click += CalendarButton_Click;
+            mainMenu2Button.Click += MainMenu_Click;
+            cameraButton.Click += Camera_Click;
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)
@@ -37,11 +39,22 @@ namespace JorjeiaAndroidApp
             var intent = new Intent(this, typeof(CalendarActivity));
             StartActivity(intent);
         }
+        private void MainMenu_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(MainActivity2));
+            StartActivity(intent);
+        }
+
+        private void Camera_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(CameraActivity));
+            StartActivity(intent);
+        }
 
         private void FindViews()
         {
             calendarButton = FindViewById<Button>(Resource.Id.calendarBtn);
-            cameraButton = FindViewById<Button>(Resource.Id.cameraBtn);
+            cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
             scheduleButton = FindViewById<Button>(Resource.Id.scheduleBtn);
             mainMenu2Button = FindViewById<Button>(Resource.Id.mainMenu2btn);
         }

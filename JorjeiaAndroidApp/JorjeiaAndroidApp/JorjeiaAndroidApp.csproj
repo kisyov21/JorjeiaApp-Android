@@ -137,12 +137,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutActivity.cs" />
     <Compile Include="AlarmReceiver.cs" />
+    <Compile Include="AskForNotificationActivity.cs" />
     <Compile Include="CalendarActivity.cs" />
     <Compile Include="CalendarViewRenderer.cs" />
     <Compile Include="CameraActivity.cs" />
     <Compile Include="CameraIntroActivity.cs" />
+    <Compile Include="ContactActivity.cs" />
     <Compile Include="CurrentMissionActivity.cs" />
+    <Compile Include="DrinkWaterActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainActivity2.cs" />
     <Compile Include="MissionCreatedActivity.cs" />
@@ -152,6 +156,7 @@
     <Compile Include="Resources\Model\Mission.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
     <Compile Include="Utility\Methods.cs" />
     <Compile Include="Utility\ImageHelper.cs" />
     <Compile Include="Utility\NewMission.cs" />
@@ -194,6 +199,18 @@
     <AndroidResource Include="Resources\layout\Toolbar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\AskForNotificationView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AboutView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContactView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DrinkWaterView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -220,6 +237,21 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>Calendar</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\style.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\water.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\..\THEGREATEST\CalendarTest\CalendarTest\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\..\THEGREATEST\CalendarTest\CalendarTest\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

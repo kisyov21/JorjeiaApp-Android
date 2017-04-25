@@ -7,11 +7,13 @@ using JorjeiaAndroidApp.Resources.DataHelper;
 using JorjeiaAndroidApp.Resources.Model;
 using System.Collections.Generic;
 using Android.Util;
+using Android.Support.V7.App;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "JorjeiaAndroidApp", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    //[Activity(Label = "JorjeiaAndroidApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "HomeActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
+    public class MainActivity : AppCompatActivity
     {
         DataBase db;
         private DateTime day = DateTime.Today;
@@ -25,8 +27,8 @@ namespace JorjeiaAndroidApp
         private List<Schedule> lstSchedule;
 
         private Button newMissionButton;
-        //private Button aboutButton;
-        //private Button contactsButton;
+        private Button aboutButton;
+        private Button contactsButton;
 
         private Button yesBtn;
         private Button noBtn;
@@ -43,20 +45,29 @@ namespace JorjeiaAndroidApp
             if (lstSource.Count != 0 && lstSource != null)
             {
                 List<Schedule> list = db.selectScheduleByDate(day);
-                foreach (var item in list)
+                if (list != null)
                 {
-                    if(item.IsPassed)
+                    foreach (var item in list)
                     {
-                        SetContentView(Resource.Layout.CurrentMissionView);
-                        FindViews2();
-                        HandleEvents2();
+                        if (item.IsPassed)
+                        {
+                            SetContentView(Resource.Layout.CurrentMissionView);
+                            FindViews2();
+                            HandleEvents2();
+                        }
+                        else
+                        {
+                            SetContentView(Resource.Layout.ConfirmationView);
+                            FindViews3();
+                            HandleEvents3();
+                        }
                     }
-                    else
-                    {
-                        SetContentView(Resource.Layout.ConfirmationView);
-                        FindViews3();
-                        HandleEvents3();
-                    }
+                }
+                else
+                {
+                    SetContentView(Resource.Layout.CurrentMissionView);
+                    FindViews2();
+                    HandleEvents2();
                 }
             }
             else
@@ -67,7 +78,7 @@ namespace JorjeiaAndroidApp
             }
 
         }
-
+        #region Confirmation View
         private void HandleEvents3()
         {
             yesBtn.Click += YesButton_Click;
@@ -76,7 +87,7 @@ namespace JorjeiaAndroidApp
 
         private void NoButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(CurrentMissionActivity));
+            var intent = new Intent(this, typeof(DrinkWaterActivity));
             StartActivity(intent);
             Finish();
         }
@@ -84,7 +95,7 @@ namespace JorjeiaAndroidApp
         private void YesButton_Click(object sender, EventArgs e)
         {
             var isOk = db.updateTableSchedule(day);
-            var intent = new Intent(this, typeof(CurrentMissionActivity));
+            var intent = new Intent(this, typeof(DrinkWaterActivity));
             StartActivity(intent);
             Finish();
         }
@@ -94,7 +105,9 @@ namespace JorjeiaAndroidApp
             yesBtn = FindViewById<Button>(Resource.Id.confirmYesBtn);
             noBtn = FindViewById<Button>(Resource.Id.confirmNoBtn);
         }
+        #endregion
 
+        #region Current Mission View
         private void HandleEvents2()
         {
             calendarButton.Click += CalendarButton_Click;
@@ -123,35 +136,41 @@ namespace JorjeiaAndroidApp
         private void FindViews2()
         {
             calendarButton = FindViewById<Button>(Resource.Id.calendarBtn);
-            cameraButton = FindViewById<Button>(Resource.Id.cameraBtn);
+            cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
             scheduleButton = FindViewById<Button>(Resource.Id.scheduleBtn);
             mainMenu2Button = FindViewById<Button>(Resource.Id.mainMenu2btn);
         }
+        #endregion
 
+        #region Main view
+
+      
         private void FindViews1()
         {
             newMissionButton = FindViewById<Button>(Resource.Id.newMissionButton);
-            //aboutButton = FindViewById<Button>(Resource.Id.about);
-            //contactsButton = FindViewById<Button>(Resource.Id.contacts);
+            aboutButton = FindViewById<Button>(Resource.Id.about);
+            contactsButton = FindViewById<Button>(Resource.Id.contacts);
         }
 
-       
+
         private void HandleEvents1()
         {
             newMissionButton.Click += NewMissionButton_Click;
-            //aboutButton.Click += AboutButton_Click;
-            //contactsButton.Click += ContactsButton_Click;
+            aboutButton.Click += AboutButton_Click;
+            contactsButton.Click += ContactsButton_Click;
         }
 
-        //private void ContactsButton_Click(object sender, EventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private void ContactsButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ContactActivity));
+            StartActivity(intent);
+        }
 
-        //private void AboutButton_Click(object sender, EventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AboutActivity));
+            StartActivity(intent);
+        }
 
         private void NewMissionButton_Click(object sender, EventArgs e)
         {
@@ -164,6 +183,7 @@ namespace JorjeiaAndroidApp
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
         }
+        #endregion
 
         private void LoadData()
         {

@@ -16,7 +16,7 @@ using JorjeiaAndroidApp.Utility;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "CameraActivity")]
+    [Activity(Label = "CameraActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class CameraActivity : Activity
     {
         private ImageView rayPictureImageView;
@@ -38,7 +38,7 @@ namespace JorjeiaAndroidApp
             imageDirectory = new File(Android.OS.Environment.GetExternalStoragePublicDirectory(
                 Android.OS.Environment.DirectoryPictures), "Jorjeia");  //Creating folder Jorjeia in gallery in order to store you picture
 
-            if (!imageDirectory.Exists()) // if folder not exists I'm going to create it
+            if (!imageDirectory.Exists()) // if folder does not exists I'm going to create it
             {
                 imageDirectory.Mkdirs();
             }
@@ -58,7 +58,7 @@ namespace JorjeiaAndroidApp
 
         private void TakePictureButton_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(MediaStore.ActionImageCapture); //allow the users to take a picture 
+            Intent intent = new Intent(MediaStore.ActionImageCapture); //allow the user to take a picture 
             imageFile = new File(imageDirectory, String.Format("Jorjeia_{0}.jpg", Guid.NewGuid())); //giving unique name to my image
             intent.PutExtra(MediaStore.ExtraOutput, Android.Net.Uri.FromFile(imageFile)); //passing my URI for the imageFile
             StartActivityForResult(intent, 0); // I call StartActivity again for Result because I'm expecting a result back inside of my application

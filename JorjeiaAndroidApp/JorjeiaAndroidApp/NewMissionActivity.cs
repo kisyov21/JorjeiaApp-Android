@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,7 @@ using JorjeiaAndroidApp.Resources.Model;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "NewMissionActivity")]
+    [Activity(Label = "NewMissionActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class NewMissionActivity : Activity
     {
         private EditText age;
@@ -23,9 +23,9 @@ namespace JorjeiaAndroidApp
         private Spinner genderSpinner;
         private Button nextButton;
 
-        private string skin= "Суха";
-        private string missions = "Мисия 1";
-        private string gender = "Мъж";
+        private string skin= "РЎСѓС…Р°";
+        private string missions = "РњРёСЃРёСЏ 1";
+        private string gender = "Р–РµРЅР°";
 
         private int typeOfMission = 1;
         private int typeOfSkin = 1;
@@ -73,15 +73,15 @@ namespace JorjeiaAndroidApp
         {
             var skinType = new string[]
             {
-                "Суха","Нормална","Мазна"
+                "РЎСѓС…Р°","РќРѕСЂРјР°Р»РЅР°","РњР°Р·РЅР°"
             };
             var missions = new string[]
             {
-                "Мисия 1", "Мисия 2","Мисия 3","Мисии 1+2","Мисии 1+3","Мисии 2+3","Мисии 1+2+3","Мисия 1 FOR MEN"
+                "РњРёСЃРёСЏ 1", "РњРёСЃРёСЏ 2","РњРёСЃРёСЏ 3","РњРёСЃРёСЏ 1+2","РњРёСЃРёСЏ 1+3","РњРёСЃРёСЏ 2+3","РњРёСЃРёСЏ 1+2+3","РњРёСЃРёСЏ 1 FOR MEN"
             };
             var gender = new string[]
             {
-                "Мъж", "Жена"
+                "Р–РµРЅР°", "РњСЉР¶"
             };
            
             //fill spinners
@@ -119,28 +119,28 @@ namespace JorjeiaAndroidApp
         { 
             switch (mission)
             {
-                case "Мисия 1":
+                case "РњРёСЃРёСЏ 1":
                     typeOfMission = 1;
                     break;
-                case "Мисия 2":
+                case "РњРёСЃРёСЏ 2":
                     typeOfMission = 2;
                     break;
-                case "Мисия 3":
+                case "РњРёСЃРёСЏ 3":
                     typeOfMission = 3;
                     break;
-                case "Мисии 1+2":
+                case "РњРёСЃРёСЏ 1+2":
                     typeOfMission = 4;
                     break;
-                case "Мисии 1+3":
+                case "РњРёСЃРёСЏ 1+3":
                     typeOfMission = 5;
                     break;
-                case "Мисии 2+3":
+                case "РњРёСЃРёСЏ 2+3":
                     typeOfMission = 6;
                     break;
-                case "Мисии 1+2+3":
+                case "РњРёСЃРёСЏ 1+2+3":
                     typeOfMission = 7;
                     break;
-                case "Мисия 1 FOR MEN":
+                case "РњРёСЃРёСЏ 1 FOR MEN":
                     typeOfMission = 8;
                     break;
             }
@@ -150,13 +150,13 @@ namespace JorjeiaAndroidApp
         {
             switch (skin)
             {
-                case "Суха":
+                case "РЎСѓС…Р°":
                     typeOfSkin = 1;
                     break;
-                case "Нормална":
+                case "РќРѕСЂРјР°Р»РЅР°":
                     typeOfSkin = 2;
                     break;
-                case "Мазна":
+                case "РњР°Р·РЅР°":
                     typeOfSkin = 3;
                     break;
             }

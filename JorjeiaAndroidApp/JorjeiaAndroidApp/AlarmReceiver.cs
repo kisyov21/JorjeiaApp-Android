@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,37 +9,42 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V7.App;
 
 namespace JorjeiaAndroidApp
 {
-    [BroadcastReceiver]
+    [BroadcastReceiver(Enabled = true)]
+    [IntentFilter(new string[] { "android.intent.action.BOOT_COMPLETED" }, Priority = (int)IntentFilterPriority.LowPriority)]
     public class AlarmReceiver : BroadcastReceiver
     {
         public override void OnReceive(Context context, Intent intent)
         {
-            var message = intent.GetStringExtra("message");
-            var title = intent.GetStringExtra("title");
+            //if (1==3)
+            //{
+            //    context.StopService(intent);
+            //}
 
-            var resultIntent = new Intent(context, typeof(MainActivity));
-            resultIntent.SetFlags(ActivityFlags.NewTask | ActivityFlags.ClearTask);
+            //When user click the notification, start new activity
+            Intent newIntent = new Intent(context, typeof(MainActivity));
 
-            var pending = PendingIntent.GetActivity(context, 0,
-                resultIntent,
-                PendingIntentFlags.CancelCurrent);
+            Android.Support.V4.App.TaskStackBuilder stackBuilder = Android.Support.V4.App.TaskStackBuilder.Create(context);
+            stackBuilder.AddParentStack(Java.Lang.Class.FromType(typeof(MainActivity)));
+            stackBuilder.AddNextIntent(newIntent);
 
-            var builder =
-                new Notification.Builder(context)
-                    .SetContentTitle(title)
-                    .SetContentText(message)
-                    .SetSmallIcon(Resource.Drawable.Icon)
-                    .SetDefaults(NotificationDefaults.All);
+            PendingIntent resultPendingIntent = stackBuilder.GetPendingIntent(0, (int)PendingIntentFlags.UpdateCurrent);
 
-            builder.SetContentIntent(pending);
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+            builder.SetAutoCancel(true)
+            .SetContentIntent(resultPendingIntent)
+            .SetDefaults((int)NotificationDefaults.All)
+            .SetSmallIcon(Resource.Drawable.Icon)
+            .SetContentTitle("Jorjeia")
+            .SetContentText("Изпълнихте ли препоръчаните мазания за днес?");
+            //.SetContentInfo("Ñ ãðèæà çà âàñ!");
 
-            var notification = builder.Build();
 
-            var manager = NotificationManager.FromContext(context);
-            manager.Notify(0, notification);
+            NotificationManager manager = (NotificationManager)context.GetSystemService(Context.NotificationService);
+            manager.Notify(1, builder.Build());
         }
     }
 }

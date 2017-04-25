@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "CameraIntroActivity")]
+    [Activity(Label = "CameraIntroActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class CameraIntroActivity : Activity
     {
         protected Button skipCameraButton;

@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "NewMissionIntroActivity")]
+    [Activity(Label = "NewMissionIntroActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class NewMissionIntroActivity : Activity
     {
         private Button newMission;

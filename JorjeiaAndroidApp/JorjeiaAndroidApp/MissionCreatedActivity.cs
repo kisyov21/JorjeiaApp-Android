@@ -15,14 +15,18 @@ using JorjeiaAndroidApp.Utility;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "MissionCreatedActivity")]
+    [Activity(Label = "MissionCreatedActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class MissionCreatedActivity : Activity
     {
+        private Button continueBtn;
         DataBase db;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MissionCreatedView);
+
+            continueBtn = FindViewById<Button>(Resource.Id.nextMCButton);
+            continueBtn.Click += continueBtnClick;
             var mission = Intent.GetIntExtra("TypeOfMission", 1);
             var skin =  Intent.GetIntExtra("TypeOfSkin", 1);
             var age = Intent.GetIntExtra("Ages", 0);
@@ -38,6 +42,12 @@ namespace JorjeiaAndroidApp
             db.insertIntoTableMission(miss);
             db.insertIntoTableSchedule(schedule);
             // Create your application here
+        }
+
+        private void continueBtnClick(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AskForNotificationActivity));
+            StartActivity(intent);
         }
     }
 }

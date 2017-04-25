@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Създадохме това приложение, както и цялата линия продукти Jorjeia , за  да  върнем Вашето самочувствието и вяра в резултатите, които може да постигнете, въпреки, мненията на хиляди дерматолози, че решение няма."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Създадени с мисия – създадени за теб!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" />
+    
+</LinearLayout>
