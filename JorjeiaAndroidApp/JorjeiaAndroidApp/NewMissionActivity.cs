@@ -125,23 +125,23 @@ namespace JorjeiaAndroidApp
                 case "Мисия 2":
                     typeOfMission = 2;
                     break;
-                case "Мисия 3":
+                //case "Мисия 3":
+                //    typeOfMission = 3;
+                //    break;
+                case "Мисия 1+2":
                     typeOfMission = 3;
                     break;
-                case "Мисия 1+2":
+                case "Мисия 1+3":
                     typeOfMission = 4;
                     break;
-                case "Мисия 1+3":
+                case "Мисия 2+3":
                     typeOfMission = 5;
                     break;
-                case "Мисия 2+3":
+                case "Мисия 1+2+3":
                     typeOfMission = 6;
                     break;
-                case "Мисия 1+2+3":
-                    typeOfMission = 7;
-                    break;
                 case "Мисия 1 FOR MEN":
-                    typeOfMission = 8;
+                    typeOfMission = 7;
                     break;
             }
         }

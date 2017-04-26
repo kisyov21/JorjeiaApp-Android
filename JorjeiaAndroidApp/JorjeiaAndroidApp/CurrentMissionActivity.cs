@@ -32,6 +32,13 @@ namespace JorjeiaAndroidApp
             calendarButton.Click += CalendarButton_Click;
             mainMenu2Button.Click += MainMenu_Click;
             cameraButton.Click += Camera_Click;
+            scheduleButton.Click += Schedule_Click;
+        }
+
+        private void Schedule_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ScheduleActivity));
+            StartActivity(intent);
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)

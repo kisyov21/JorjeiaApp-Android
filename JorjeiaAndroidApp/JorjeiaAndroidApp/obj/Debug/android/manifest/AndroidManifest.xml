@@ -24,6 +24,7 @@
     <activity android:label="MissionCreatedActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.MissionCreatedActivity" />
     <activity android:label="NewMissionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionActivity" />
     <activity android:label="NewMissionIntroActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionIntroActivity" />
+    <activity android:label="ScheduleActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.ScheduleActivity" />
     <activity android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5d591c8f9f78c577e6713e8df671ac951.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -141,6 +141,23 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
+        public bool updateTableMission()
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    connection.Query<Mission>("UPDATE Mission set hasMission=? Where hasMission=1 ", 0);
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return false;
+            }
+        }
+
         public bool deleteTableSchedule()
         {
             try

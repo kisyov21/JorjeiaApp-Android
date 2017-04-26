@@ -42,24 +42,32 @@ namespace JorjeiaAndroidApp
             Log.Info("DB_PATH", folder);
 
             LoadData();
-            if (lstSource.Count != 0 && lstSource != null)
+            if (lstSource.Count != 0 && lstSource != null ) // dali ima misiq
             {
-                List<Schedule> list = db.selectScheduleByDate(day);
-                if (list != null)
+                if (lstSource[0].hasMission == 1) //dali e svyrshila
                 {
-                    foreach (var item in list)
+                    List<Schedule> list = db.selectScheduleByDate(day);
+                    if (day > lstSchedule[lstSchedule.Count - 1].Date)
                     {
-                        if (item.IsPassed)
+                        db.updateTableMission();
+                        //TODO pozdravleniq zavyrshite cikyla
+                    }
+                    else if (list != null)
+                    {
+                        foreach (var item in list)
                         {
-                            SetContentView(Resource.Layout.CurrentMissionView);
-                            FindViews2();
-                            HandleEvents2();
-                        }
-                        else
-                        {
-                            SetContentView(Resource.Layout.ConfirmationView);
-                            FindViews3();
-                            HandleEvents3();
+                            if (item.IsPassed)
+                            {
+                                SetContentView(Resource.Layout.CurrentMissionView);
+                                FindViews2();
+                                HandleEvents2();
+                            }
+                            else
+                            {
+                                SetContentView(Resource.Layout.ConfirmationView);
+                                FindViews3();
+                                HandleEvents3();
+                            }
                         }
                     }
                 }
@@ -113,6 +121,13 @@ namespace JorjeiaAndroidApp
             calendarButton.Click += CalendarButton_Click;
             mainMenu2Button.Click += MainMenu_Click;
             cameraButton.Click += Camera_Click;
+            scheduleButton.Click += Schedule_Click;
+        }
+
+        private void Schedule_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ScheduleActivity));
+            StartActivity(intent);
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
