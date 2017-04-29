@@ -39,6 +39,7 @@ namespace JorjeiaAndroidApp
             intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission",0));
             intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin",0));
             intent.PutExtra("Ages", Intent.GetIntExtra("Ages",0));
+            intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
             StartActivity(intent);
         }
 
@@ -48,6 +49,7 @@ namespace JorjeiaAndroidApp
             intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
             intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
             intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
+            intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
             StartActivity(intent);
             Finish();
         }

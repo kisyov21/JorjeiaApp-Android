@@ -37,12 +37,14 @@ namespace JorjeiaAndroidApp
             StartAlarm();
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void NoButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void FindViews()

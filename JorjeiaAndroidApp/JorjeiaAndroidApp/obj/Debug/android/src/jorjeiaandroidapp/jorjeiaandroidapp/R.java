@@ -2819,7 +2819,8 @@ containing a value of this type.
         public static final int nextMCButton=0x7f070097;
         public static final int nextNMButton=0x7f0700b8;
         public static final int nextNMIButton=0x7f0700b2;
-        public static final int nextSButton=0x7f0700c7;
+        public static final int nextSButton=0x7f0700ce;
+        public static final int nextScarButton=0x7f0700cc;
         public static final int none=0x7f070011;
         public static final int normal=0x7f07000d;
         public static final int notifNoBtn=0x7f07006d;
@@ -2833,6 +2834,12 @@ containing a value of this type.
         public static final int progress_circular=0x7f070006;
         public static final int progress_horizontal=0x7f070007;
         public static final int radio=0x7f070055;
+        public static final int radioButton1=0x7f0700c7;
+        public static final int radioButton2=0x7f0700c8;
+        public static final int radioButton3=0x7f0700c9;
+        public static final int radioButton4=0x7f0700ca;
+        public static final int radioButton5=0x7f0700cb;
+        public static final int radioGroup1=0x7f0700c6;
         public static final int rayPictureImageView=0x7f070072;
         public static final int relativeLayout1=0x7f07006b;
         public static final int relativeLayout2=0x7f0700b5;
@@ -2860,7 +2867,7 @@ containing a value of this type.
         public static final int showHome=0x7f070013;
         public static final int showTitle=0x7f070014;
         public static final int skipCButton=0x7f07006f;
-        public static final int sliding_tabs=0x7f0700c8;
+        public static final int sliding_tabs=0x7f0700cf;
         public static final int snackbar_action=0x7f070087;
         public static final int snackbar_text=0x7f070086;
         public static final int snap=0x7f070028;
@@ -2881,13 +2888,13 @@ containing a value of this type.
         public static final int text2=0x7f0700c1;
         public static final int text22View=0x7f07008d;
         public static final int textCameraView1=0x7f070071;
-        public static final int textCurrentMissionView=0x7f0700c6;
+        public static final int textCurrentMissionView=0x7f0700cd;
         public static final int textSpacerNoButtons=0x7f07004e;
         public static final int textView=0x7f07006a;
         public static final int time=0x7f0700bf;
         public static final int title=0x7f070044;
         public static final int title_template=0x7f070049;
-        public static final int toolbar=0x7f0700c9;
+        public static final int toolbar=0x7f0700d0;
         public static final int top=0x7f070033;
         public static final int topPanel=0x7f070048;
         public static final int touch_outside=0x7f070084;
@@ -2981,14 +2988,15 @@ containing a value of this type.
         public static final int notification_template_media=0x7f03003f;
         public static final int notification_template_part_chronometer=0x7f030040;
         public static final int notification_template_part_time=0x7f030041;
-        public static final int scheduleview=0x7f030042;
-        public static final int select_dialog_item_material=0x7f030043;
-        public static final int select_dialog_multichoice_material=0x7f030044;
-        public static final int select_dialog_singlechoice_material=0x7f030045;
-        public static final int support_simple_spinner_dropdown_item=0x7f030046;
-        public static final int tabbar=0x7f030047;
-        public static final int toolbar=0x7f030048;
-        public static final int week=0x7f030049;
+        public static final int scarview=0x7f030042;
+        public static final int scheduleview=0x7f030043;
+        public static final int select_dialog_item_material=0x7f030044;
+        public static final int select_dialog_multichoice_material=0x7f030045;
+        public static final int select_dialog_singlechoice_material=0x7f030046;
+        public static final int support_simple_spinner_dropdown_item=0x7f030047;
+        public static final int tabbar=0x7f030048;
+        public static final int toolbar=0x7f030049;
+        public static final int week=0x7f03004a;
     }
     public static final class string {
         public static final int ApplicationName=0x7f08002a;

@@ -2714,8 +2714,11 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f0700b2
 			public const int nextNMIButton = 2131165362;
 			
-			// aapt resource value: 0x7f0700c7
-			public const int nextSButton = 2131165383;
+			// aapt resource value: 0x7f0700ce
+			public const int nextSButton = 2131165390;
+			
+			// aapt resource value: 0x7f0700cc
+			public const int nextScarButton = 2131165388;
 			
 			// aapt resource value: 0x7f070011
 			public const int none = 2131165201;
@@ -2755,6 +2758,24 @@ namespace JorjeiaAndroidApp
 			
 			// aapt resource value: 0x7f070055
 			public const int radio = 2131165269;
+			
+			// aapt resource value: 0x7f0700c7
+			public const int radioButton1 = 2131165383;
+			
+			// aapt resource value: 0x7f0700c8
+			public const int radioButton2 = 2131165384;
+			
+			// aapt resource value: 0x7f0700c9
+			public const int radioButton3 = 2131165385;
+			
+			// aapt resource value: 0x7f0700ca
+			public const int radioButton4 = 2131165386;
+			
+			// aapt resource value: 0x7f0700cb
+			public const int radioButton5 = 2131165387;
+			
+			// aapt resource value: 0x7f0700c6
+			public const int radioGroup1 = 2131165382;
 			
 			// aapt resource value: 0x7f070072
 			public const int rayPictureImageView = 2131165298;
@@ -2837,8 +2858,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f07006f
 			public const int skipCButton = 2131165295;
 			
-			// aapt resource value: 0x7f0700c8
-			public const int sliding_tabs = 2131165384;
+			// aapt resource value: 0x7f0700cf
+			public const int sliding_tabs = 2131165391;
 			
 			// aapt resource value: 0x7f070087
 			public const int snackbar_action = 2131165319;
@@ -2900,8 +2921,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070071
 			public const int textCameraView1 = 2131165297;
 			
-			// aapt resource value: 0x7f0700c6
-			public const int textCurrentMissionView = 2131165382;
+			// aapt resource value: 0x7f0700cd
+			public const int textCurrentMissionView = 2131165389;
 			
 			// aapt resource value: 0x7f07004e
 			public const int textSpacerNoButtons = 2131165262;
@@ -2918,8 +2939,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070049
 			public const int title_template = 2131165257;
 			
-			// aapt resource value: 0x7f0700c9
-			public const int toolbar = 2131165385;
+			// aapt resource value: 0x7f0700d0
+			public const int toolbar = 2131165392;
 			
 			// aapt resource value: 0x7f070033
 			public const int top = 2131165235;
@@ -3222,28 +3243,31 @@ namespace JorjeiaAndroidApp
 			public const int notification_template_part_time = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int ScheduleView = 2130903106;
+			public const int ScarView = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_item_material = 2130903107;
+			public const int ScheduleView = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int select_dialog_multichoice_material = 2130903108;
+			public const int select_dialog_item_material = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int select_dialog_singlechoice_material = 2130903109;
+			public const int select_dialog_multichoice_material = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int support_simple_spinner_dropdown_item = 2130903110;
+			public const int select_dialog_singlechoice_material = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int Tabbar = 2130903111;
+			public const int support_simple_spinner_dropdown_item = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int Toolbar = 2130903112;
+			public const int Tabbar = 2130903112;
 			
 			// aapt resource value: 0x7f030049
-			public const int week = 2130903113;
+			public const int Toolbar = 2130903113;
+			
+			// aapt resource value: 0x7f03004a
+			public const int week = 2130903114;
 			
 			static Layout()
 			{

@@ -56,7 +56,14 @@ namespace JorjeiaAndroidApp
         private void NextButton_Click(object sender, EventArgs e)
         {
             years = Convert.ToInt32(age.Text);
-            var intent = new Intent(this, typeof(CameraIntroActivity));
+            Intent intent;
+            if (typeOfMission == 1)
+            {
+                intent = new Intent(this, typeof(ScarActivity));
+            }else
+            {
+                intent = new Intent(this, typeof(CameraIntroActivity));
+            }
             intent.PutExtra("TypeOfMission", typeOfMission);
             intent.PutExtra("TypeOfSkin", typeOfSkin);
             intent.PutExtra("Ages", years);

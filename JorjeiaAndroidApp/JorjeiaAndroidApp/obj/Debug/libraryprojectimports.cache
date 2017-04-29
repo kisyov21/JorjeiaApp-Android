@@ -8,6 +8,11 @@
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Square.AndroidTimesSquare\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.Design\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.MediaRouter\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
@@ -29,6 +34,11 @@
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Square.AndroidTimesSquare.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.Design.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.CardView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.MediaRouter.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>

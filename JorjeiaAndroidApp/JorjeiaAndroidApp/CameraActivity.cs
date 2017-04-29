@@ -21,6 +21,7 @@ namespace JorjeiaAndroidApp
     {
         private ImageView rayPictureImageView;
         private Button takePictureButton;
+        private Button nextButton;
         private File imageDirectory; //file to store my folder
         private File imageFile; //file to store my image
         private Bitmap imageBitmap; //to store my bitmap
@@ -49,11 +50,24 @@ namespace JorjeiaAndroidApp
         {
             rayPictureImageView = FindViewById<ImageView>(Resource.Id.rayPictureImageView);
             takePictureButton = FindViewById<Button>(Resource.Id.takePictureButton);
+            nextButton = FindViewById<Button>(Resource.Id.nextCalendarButton);
         }
 
         private void HandleEvents()
         {
             takePictureButton.Click += TakePictureButton_Click;
+            nextButton.Click += NextButton_Click;
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(MissionCreatedActivity));
+            intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
+            intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
+            intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
+            intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
+            StartActivity(intent);
+            Finish();
         }
 
         private void TakePictureButton_Click(object sender, EventArgs e)

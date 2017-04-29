@@ -32,8 +32,9 @@ namespace JorjeiaAndroidApp
             var mission = Intent.GetIntExtra("TypeOfMission", 1);
             var skin =  Intent.GetIntExtra("TypeOfSkin", 1);
             var age = Intent.GetIntExtra("Ages", 0);
+            var scar = Intent.GetIntExtra("Scar", 0);
             var schedule = Methods.Calculate(mission);
-            SetTypeOfMission(mission, skin, age);
+            SetTypeOfMission(mission, skin, age, scar);
             //Create DataBase
             db = new DataBase();
             var isOkS = db.deleteTableSchedule();
@@ -52,7 +53,7 @@ namespace JorjeiaAndroidApp
             StartActivity(intent);
         }
 
-        private void SetTypeOfMission(int mission, int skin, int age)
+        private void SetTypeOfMission(int mission, int skin, int age, int scar)
         {
             ////missions : 1-mission 1, 2-mission 2, 3-mission 1+2, 4-mission 1+3, 5-mission 2+3, 6-mission 1+2+3, 7-mission men
 
