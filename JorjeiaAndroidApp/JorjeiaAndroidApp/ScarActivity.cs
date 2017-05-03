@@ -85,6 +85,7 @@ namespace JorjeiaAndroidApp
             intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
             intent.PutExtra("Scar", scarType);
             StartActivity(intent);
+            Finish();
         }
     }
 }

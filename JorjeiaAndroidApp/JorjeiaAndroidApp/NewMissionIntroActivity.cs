@@ -40,6 +40,7 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(NewMissionActivity));
             StartActivity(intent);
+            Finish();
         }
     }
 }

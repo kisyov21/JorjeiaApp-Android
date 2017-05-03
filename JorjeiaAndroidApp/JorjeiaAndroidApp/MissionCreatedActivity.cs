@@ -51,6 +51,7 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(AskForNotificationActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void SetTypeOfMission(int mission, int skin, int age, int scar)
