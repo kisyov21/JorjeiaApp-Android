@@ -31,15 +31,19 @@ namespace JorjeiaAndroidApp
             continueBtn.Click += continueBtnClick;
             var mission = Intent.GetIntExtra("TypeOfMission", 1);
             var skin =  Intent.GetIntExtra("TypeOfSkin", 1);
-            var age = Intent.GetIntExtra("Ages", 0);
-            var scar = Intent.GetIntExtra("Scar", 0);
-            var schedule = Methods.Calculate(mission);
+            var age = Intent.GetIntExtra("Ages", 34);
+            var scar = Intent.GetIntExtra("Scar", 4);
+            var weight = Intent.GetIntExtra("Weight", 50);
+            var schedule = Methods.Calculate(age);
+
             SetTypeOfMission(mission, skin, age, scar);
+            
             //Create DataBase
             db = new DataBase();
             var isOkS = db.deleteTableSchedule();
             var isOkM = db.deleteTableMission();
-            Mission miss = new Mission() { hasMission = 1, typeMission = type };
+
+            Mission miss = new Mission() { hasMission = 1, typeMission = type, waterInMl = weight*30};
 
             //TODO delete records from table
             db.insertIntoTableMission(miss);
@@ -56,119 +60,237 @@ namespace JorjeiaAndroidApp
 
         private void SetTypeOfMission(int mission, int skin, int age, int scar)
         {
-            ////missions : 1-mission 1, 2-mission 2, 3-mission 1+2, 4-mission 1+3, 5-mission 2+3, 6-mission 1+2+3, 7-mission men
+            ////missions : 1-mission 1, 2-mission 2, 3-mission 1+2, 4-mission 1+3, 5-mission 2+3, 6-mission 1+2+3, 7-mission men, 8-mission men + mission 3
 
-            if(mission == 1 && skin == 1 && age <= 33)
+            if(mission == 1 && skin == 1 && age <= 33 && scar <=3)
             {
                 type = 1;
             }
-            else if(mission == 1 && skin == 1 && age > 33)
+            else if (mission == 1 && skin == 1 && age <= 33 && scar > 3)
             {
                 type = 2;
             }
-            else if (mission == 1 && skin == 2 && age <= 33)
+            else if(mission == 1 && skin == 1 && age > 33 && scar <= 3)
             {
                 type = 3;
             }
-            else if (mission == 1 && skin == 2 && age > 33)
+            else if (mission == 1 && skin == 1 && age > 33 && scar > 3)
             {
                 type = 4;
             }
-            else if (mission == 2 && skin == 1 && age <= 33)
+            else if (mission == 1 && skin == 2 && age <= 33 && scar <= 3)
             {
                 type = 5;
             }
-            else if (mission == 2 && skin == 1 && age > 33)
+            else if (mission == 1 && skin == 2 && age <= 33 && scar > 3)
             {
                 type = 6;
             }
-            else if (mission == 2 && skin == 2 && age <= 33)
+            else if (mission == 1 && skin == 2 && age > 33 && scar <= 3)
             {
                 type = 7;
             }
-            else if (mission == 2 && skin == 2 && age > 33)
+            else if (mission == 1 && skin == 2 && age > 33 && scar > 3)
             {
                 type = 8;
             }
-            else if (mission == 3 && skin == 1 && age <= 33)
+            else if (mission == 2 && skin == 1 && age <= 33)
             {
                 type = 9;
             }
-            else if (mission == 3 && skin == 1 && age > 33)
+            else if (mission == 2 && skin == 1 && age > 33)
             {
                 type = 10;
             }
-            else if (mission == 3 && skin == 2 && age <= 33)
+            else if (mission == 2 && skin == 2 && age <= 33)
             {
                 type = 11;
             }
-            else if (mission == 3 && skin == 2 && age > 33)
+            else if (mission == 2 && skin == 2 && age > 33)
             {
                 type = 12;
             }
-            else if (mission == 4 && skin == 1 && age <= 33)
+
+            else if (mission == 3 && skin == 1 && age <= 33 && scar <= 3)
             {
                 type = 13;
             }
-            else if (mission == 4 && skin == 1 && age > 33)
+            else if (mission == 3 && skin == 1 && age <= 33 && scar > 3)
             {
                 type = 14;
             }
-            else if (mission == 4 && skin == 2 && age <= 33)
+            else if (mission == 3 && skin == 1 && age > 33 && scar <= 3)
             {
                 type = 15;
             }
-            else if (mission == 4 && skin == 2 && age > 33)
+            else if (mission == 3 && skin == 1 && age > 33 && scar > 3)
             {
                 type = 16;
             }
-            else if (mission == 5 && skin == 1 && age <= 33)
+            else if (mission == 3 && skin == 2 && age <= 33 && scar <= 3)
             {
                 type = 17;
             }
-            else if (mission == 5 && skin == 1 && age > 33)
+            else if (mission == 3 && skin == 2 && age <= 33 && scar > 3)
             {
                 type = 18;
             }
-            else if (mission == 5 && skin == 2 && age <= 33)
+            else if (mission == 3 && skin == 2 && age > 33 && scar <= 3)
             {
                 type = 19;
             }
-            else if (mission == 5 && skin == 2 && age > 33)
+            else if (mission == 3 && skin == 2 && age > 33 && scar > 3)
             {
                 type = 20;
             }
-            else if (mission == 6 && skin == 1 && age <= 33)
+
+            else if (mission == 4 && skin == 1 && age <= 33 && scar <= 3)
             {
                 type = 21;
             }
-            else if (mission == 6 && skin == 1 && age > 33)
+            else if (mission == 4 && skin == 1 && age <= 33 && scar > 3)
             {
                 type = 22;
             }
-            else if (mission == 6 && skin == 2 && age <= 33)
+            else if (mission == 4 && skin == 1 && age > 33 && scar <= 3)
             {
                 type = 23;
             }
-            else if (mission == 6 && skin == 2 && age > 33)
+            else if (mission == 4 && skin == 1 && age > 33 && scar > 3)
             {
                 type = 24;
             }
-            else if (mission == 7 && skin == 1 && age <= 33)
+            else if (mission == 4 && skin == 2 && age <= 33 && scar <= 3)
             {
-                //men
+                type = 25;
             }
-            else if (mission == 7 && skin == 1 && age > 33)
+            else if (mission == 4 && skin == 2 && age <= 33 && scar > 3)
             {
-                //men
+                type = 26;
             }
-            else if (mission == 7 && skin == 2 && age <= 33)
+            else if (mission == 4 && skin == 2 && age > 33 && scar <= 3)
             {
-                //men
+                type = 27;
             }
-            else if (mission == 7 && skin == 2 && age > 33)
+            else if (mission == 4 && skin == 2 && age > 33 && scar > 3)
             {
-                //men
+                type = 28;
+            }
+
+            else if (mission == 5 && skin == 1 && age <= 33)
+            {
+                type = 29;
+            }
+            else if (mission == 5 && skin == 1 && age > 33)
+            {
+                type = 30;
+            }
+            else if (mission == 5 && skin == 2 && age <= 33)
+            {
+                type = 31;
+            }
+            else if (mission == 5 && skin == 2 && age > 33)
+            {
+                type = 32;
+            }
+
+            else if (mission == 6 && skin == 1 && age <= 33 && scar <= 3)
+            {
+                type = 33;
+            }
+            else if (mission == 6 && skin == 1 && age <= 33 && scar > 3)
+            {
+                type = 34;
+            }
+            else if (mission == 6 && skin == 1 && age > 33 && scar <= 3)
+            {
+                type = 35;
+            }
+            else if (mission == 6 && skin == 1 && age > 33 && scar > 3)
+            {
+                type = 36;
+            }
+            else if (mission == 6 && skin == 2 && age <= 33 && scar <= 3)
+            {
+                type = 37;
+            }
+            else if (mission == 6 && skin == 2 && age <= 33 && scar > 3)
+            {
+                type = 38;
+            }
+            else if (mission == 6 && skin == 2 && age > 33 && scar <= 3)
+            {
+                type = 39;
+            }
+            else if (mission == 6 && skin == 2 && age > 33 && scar > 3)
+            {
+                type = 40;
+            }
+
+            else if (mission == 7 && skin == 1 && age <= 33 && scar <= 3)
+            {
+                type = 41;
+            }
+            else if (mission == 7 && skin == 1 && age <= 33 && scar > 3)
+            {
+                type = 42;
+            }
+            else if (mission == 7 && skin == 1 && age > 33 && scar <= 3)
+            {
+                type = 43;
+            }
+            else if (mission == 7 && skin == 1 && age > 33 && scar > 3)
+            {
+                type = 44;
+            }
+            else if (mission == 7 && skin == 2 && age <= 33 && scar <= 3)
+            {
+                type = 45;
+            }
+            else if (mission == 7 && skin == 2 && age <= 33 && scar > 3)
+            {
+                type = 46;
+            }
+            else if (mission == 7 && skin == 2 && age > 33 && scar <= 3)
+            {
+                type = 47;
+            }
+            else if (mission == 7 && skin == 2 && age > 33 && scar > 3)
+            {
+                type = 48;
+            }
+
+            else if (mission == 8 && skin == 1 && age <= 33 && scar <= 3)
+            {
+                type = 49;
+            }
+            else if (mission == 8 && skin == 1 && age <= 33 && scar > 3)
+            {
+                type = 50;
+            }
+            else if (mission == 8 && skin == 1 && age > 33 && scar <= 3)
+            {
+                type = 51;
+            }
+            else if (mission == 8 && skin == 1 && age > 33 && scar > 3)
+            {
+                type = 52;
+            }
+            else if (mission == 8 && skin == 2 && age <= 33 && scar <= 3)
+            {
+                type = 53;
+            }
+            else if (mission == 8 && skin == 2 && age <= 33 && scar > 3)
+            {
+                type = 54;
+            }
+            else if (mission == 8 && skin == 2 && age > 33 && scar <= 3)
+            {
+                type = 55;
+            }
+            else if (mission == 8 && skin == 2 && age > 33 && scar > 3)
+            {
+                type = 56;
             }
         }
     }

@@ -3,7 +3,8 @@
   <PropertyGroup>
     <SelectedDevice>5.1" Marshmallow %286.0.0%29 XXHDPI Phone</SelectedDevice>
     <DefaultDevice>5.1" Marshmallow %286.0.0%29 XXHDPI Phone</DefaultDevice>
-    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>Nexus S</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

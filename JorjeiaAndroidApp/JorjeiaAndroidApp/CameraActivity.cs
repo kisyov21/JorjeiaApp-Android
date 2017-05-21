@@ -13,12 +13,14 @@ using Java.IO;
 using Android.Graphics;
 using Android.Provider;
 using JorjeiaAndroidApp.Utility;
+using JorjeiaAndroidApp.Resources.DataHelper;
 
 namespace JorjeiaAndroidApp
 {
     [Activity(Label = "CameraActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class CameraActivity : Activity
     {
+        DataBase db;
         private ImageView rayPictureImageView;
         private Button takePictureButton;
         private Button nextButton;
@@ -61,11 +63,21 @@ namespace JorjeiaAndroidApp
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(MissionCreatedActivity));
-            intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
-            intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
-            intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
-            intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
+            var mission = Intent.GetIntExtra("TypeOfMission", 0);
+            Intent intent;
+            if (mission != 0)
+            {
+                intent = new Intent(this, typeof(MissionCreatedActivity));
+                intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
+                intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
+                intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
+                intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
+                intent.PutExtra("Weight", Intent.GetIntExtra("Weight", 45));
+            }
+            else
+            {
+                intent = new Intent(this, typeof(CurrentMissionActivity));
+            }
             StartActivity(intent);
             Finish();
         }

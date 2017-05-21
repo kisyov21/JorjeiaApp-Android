@@ -19,6 +19,7 @@ namespace JorjeiaAndroidApp.Resources.Model
         public int Id { get; set; }
         public int hasMission { get; set; }
         public int typeMission { get; set; }
+        public int waterInMl { get; set; }
     }
 
     public class Schedule

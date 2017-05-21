@@ -7,6 +7,7 @@
     <TextView
         android:text="Създадохме това приложение, както и цялата линия продукти Jorjeia , за  да  върнем Вашето самочувствието и вяра в резултатите, които може да постигнете, въпреки, мненията на хиляди дерматолози, че решение няма."
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#6cb33f"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -15,10 +16,10 @@
     <TextView
         android:text="Създадени с мисия – създадени за теб!"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#6cb33f"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_margin="10dp"
         android:gravity="center_horizontal" />
-    
 </LinearLayout>

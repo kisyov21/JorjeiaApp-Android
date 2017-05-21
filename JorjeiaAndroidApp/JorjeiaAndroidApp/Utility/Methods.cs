@@ -15,63 +15,31 @@ namespace JorjeiaAndroidApp.Utility
 {
     public static class Methods
     {
-        public static List<Schedule> Calculate(int type)
+        public static List<Schedule> Calculate(int age)
         {
             List<Schedule> schedule = new List<Schedule>();
             int days = 0;
+            int type;
+            if (age <= 33)
+            {
+                type = 1;
+            }
+            else
+            {
+                type = 2;
+            }
+
             switch (type)
             {
-                case 1:// "Мисия 1":
+                case 1:
                     while(days < 61)
                     {
                         schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
                         days++;
                     }
                     break;
-                case 2:// "Мисия 2":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 3:// "Мисия 3":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 4:// "Мисии 1+2":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 5:// "Мисии 1+3":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 6:// "Мисии 2+3":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 7:// "Мисии 1+2+3":
-                    while (days < 61)
-                    {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
-                        days++;
-                    }
-                    break;
-                case 8:// "Мисия 1 FOR MEN":
-                    while (days < 61)
+                case 2:
+                    while (days < 91)
                     {
                         schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
                         days++;

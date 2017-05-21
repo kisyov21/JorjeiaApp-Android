@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace JorjeiaAndroidApp
 {
-    [Activity(Label = "ScarActivity")]
+    [Activity(Label = "ScarActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class ScarActivity : Activity
     {
         Button next;
@@ -83,6 +83,7 @@ namespace JorjeiaAndroidApp
             intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
             intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
             intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
+            intent.PutExtra("Weight", Intent.GetIntExtra("Weight", 45));
             intent.PutExtra("Scar", scarType);
             StartActivity(intent);
             Finish();

@@ -59,9 +59,8 @@ namespace JorjeiaAndroidApp
             AlarmManager manager = (AlarmManager)GetSystemService(Context.AlarmService);
             Intent myIntent;
             PendingIntent pendingIntent;
-
-                myIntent = new Intent(this, typeof(AlarmReceiver));
-                pendingIntent = PendingIntent.GetBroadcast(this, 0, myIntent, 0);
+            myIntent = new Intent(this, typeof(AlarmNotificationReceiver));
+            pendingIntent = PendingIntent.GetBroadcast(this, 0, myIntent, 0);
             
 
             //if (!isRepeating)

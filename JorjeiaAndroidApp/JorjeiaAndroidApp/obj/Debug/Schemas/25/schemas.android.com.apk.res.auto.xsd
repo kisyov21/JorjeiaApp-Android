@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>30.4.2017 г. 1:08:09</xs:documentation>
+    <xs:documentation>21.5.2017 г. 20:58:57</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1093,9 +1093,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -1186,6 +1188,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1599,9 +1602,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -1692,6 +1697,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2000,9 +2006,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -2093,6 +2101,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2401,9 +2410,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -2494,6 +2505,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4521,9 +4533,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -4614,6 +4628,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4922,9 +4937,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -5015,6 +5032,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5405,9 +5423,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -5498,6 +5518,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6027,9 +6048,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -6120,6 +6143,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6428,9 +6452,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -6521,6 +6547,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -7705,9 +7732,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -7798,6 +7827,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8106,9 +8136,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -8199,6 +8231,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8570,9 +8603,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -8663,6 +8698,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8971,9 +9007,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -9064,6 +9102,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9468,9 +9507,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -9561,6 +9602,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10101,9 +10143,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -10194,6 +10238,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10581,9 +10626,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -10674,6 +10721,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11176,9 +11224,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -11269,6 +11319,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11771,9 +11822,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -11864,6 +11917,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12172,9 +12226,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -12265,6 +12321,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12655,9 +12712,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -12748,6 +12807,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13508,9 +13568,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -13601,6 +13663,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13991,9 +14054,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -14084,6 +14149,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14392,9 +14458,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -14485,6 +14553,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14954,9 +15023,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -15047,6 +15118,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15679,9 +15751,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -15772,6 +15846,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16080,9 +16155,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -16173,6 +16250,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16670,9 +16748,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -16763,6 +16843,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17265,9 +17346,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -17358,6 +17441,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17748,9 +17832,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -17841,6 +17927,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18343,9 +18430,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -18436,6 +18525,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19066,9 +19156,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -19159,6 +19251,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19467,9 +19560,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -19560,6 +19655,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21735,9 +21831,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -21828,6 +21926,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23356,9 +23455,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -23449,6 +23550,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23951,9 +24053,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -24044,6 +24148,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24352,9 +24457,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -24445,6 +24552,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24753,9 +24861,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -24846,6 +24956,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26026,9 +26137,11 @@
             <xs:enumeration value="@drawable/abc_textfield_search_activated_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
+            <xs:enumeration value="@drawable/button_border_radius" />
             <xs:enumeration value="@drawable/calendar_bg_selector" />
             <xs:enumeration value="@drawable/design_fab_background" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/home_logo" />
             <xs:enumeration value="@drawable/ic_audiotrack" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
             <xs:enumeration value="@drawable/ic_bluetooth_grey" />
@@ -26119,6 +26232,7 @@
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
             <xs:enumeration value="@drawable/water" />
+            <xs:enumeration value="@drawable/water_bottle" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

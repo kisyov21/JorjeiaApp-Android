@@ -17,7 +17,7 @@ namespace JorjeiaAndroidApp
 {
     [BroadcastReceiver(Enabled = true)]
     [IntentFilter(new string[] { "android.intent.action.BOOT_COMPLETED" }, Priority = (int)IntentFilterPriority.LowPriority)]
-    public class AlarmReceiver : BroadcastReceiver
+    public class AlarmNotificationReceiver : BroadcastReceiver
     {
         DataBase db;
         private List<Schedule> lstSchedule;

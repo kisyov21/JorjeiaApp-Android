@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="От изключитено значение за постигане на желаните резултати е дневния прием на вода. Моля попълнете коректно полетата, за да ви бъде изчислен минималния дневен прием на вода."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:editable="False"
+        android:paddingTop="20dp"
+        android:textSize="16dp"
+        android:textColor="#005e09"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:text="Вашият пол:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#005e09"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0.0dp" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerGender"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Въведете вашата възраст:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#005e09"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp" />
+        <EditText
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="18"
+            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ageEditTextView"
+            android:background="#f7f9f7"
+            android:textColor="#005e09"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Въведете вашите килограми:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#005e09"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp" />
+        <EditText
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="40"
+            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/weightTextView"
+            android:background="#f7f9f7"
+            android:textColor="#005e09"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+        <Button
+            android:text="Напред"
+            android:id="@+id/nextWeightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+</LinearLayout>

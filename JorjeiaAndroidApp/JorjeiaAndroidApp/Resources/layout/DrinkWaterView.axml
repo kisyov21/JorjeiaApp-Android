@@ -5,19 +5,21 @@
     android:layout_height="match_parent">
     <TextView
         android:text="Jorjeia ви напомня да пиете вода!"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text22View"
+        android:textColor="#6cb33f"
         android:layout_margin="10dp"
         android:gravity="center_horizontal" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/water"
+        android:src="@drawable/water_bottle"
+        android:gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="0.0dp"
         android:layout_marginTop="20dp" />
     <RelativeLayout
         android:minWidth="25px"
@@ -29,6 +31,8 @@
         <Button
             android:text="Добре"
             android:id="@+id/okButton"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

@@ -11,11 +11,11 @@
         android:text="Успешно създадохте план за мазане !"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:editable="False"
         android:paddingTop="20dp"
         android:textSize="16dp"
         android:textColor="#005e09"
-        android:gravity="start"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <RelativeLayout
