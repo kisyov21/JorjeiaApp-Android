@@ -7,6 +7,7 @@
     <TextView
         android:text="Желате ли да получавате известие ежедневно от приложението на Jorjeia?"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#005e09"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -17,18 +18,25 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="horizontal"
-        android:id="@+id/relativeLayout1">
+        android:id="@+id/relativeLayout1"
+        android:gravity="center_horizontal">
         <Button
             android:text="Да"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/notifYesBtn"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
         <Button
             android:text="Не"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/notifNoBtn"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
     </LinearLayout>
 </LinearLayout>

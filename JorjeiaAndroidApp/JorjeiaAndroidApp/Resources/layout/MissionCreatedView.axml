@@ -6,7 +6,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/Small_logo"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
     <TextView
         android:text="Успешно създадохте план за мазане !"
         android:layout_width="match_parent"
@@ -28,6 +31,8 @@
         <Button
             android:text="Напред"
             android:id="@+id/nextMCButton"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

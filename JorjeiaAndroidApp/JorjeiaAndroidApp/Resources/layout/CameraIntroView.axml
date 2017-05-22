@@ -6,16 +6,19 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/Logo" />
+        android:src="@drawable/Small_logo"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
     <TextView
         android:text="Поздравления, до тук се справихте отлично!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:editable="False"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         android:textSize="16dp"
         android:textColor="#005e09"
-        android:gravity="start"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <TextView
@@ -26,7 +29,7 @@
         android:paddingTop="20dp"
         android:textSize="14dp"
         android:textColor="#005e09"
-        android:gravity="start"
+        android:gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <TextView
@@ -37,7 +40,7 @@
         android:paddingTop="20dp"
         android:textSize="14dp"
         android:textColor="#005e09"
-        android:gravity="start"
+        android:gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <RelativeLayout
@@ -49,6 +52,8 @@
         android:layout_gravity="bottom">
         <Button
             android:text="Пропусни"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/skipCButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,6 +68,8 @@
             android:layout_marginTop="20dp" />
         <Button
             android:text="Продължи"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/nextCButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

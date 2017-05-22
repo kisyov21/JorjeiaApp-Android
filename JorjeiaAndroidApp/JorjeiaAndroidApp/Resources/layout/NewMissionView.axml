@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/splash_logo"
+        android:src="@drawable/Small_logo"
         android:layout_marginTop="20dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp" />
@@ -55,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerMissionsType"
+        android:textColor="#005e09"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <RelativeLayout
@@ -79,6 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerSkinType"
+            android:textColor="#005e09"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="10dp"
             android:layout_alignParentRight="true"
@@ -158,6 +160,8 @@
         android:layout_gravity="bottom">
         <Button
             android:text="Напред"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/nextNMButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

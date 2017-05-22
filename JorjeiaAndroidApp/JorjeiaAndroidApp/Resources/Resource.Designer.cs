@@ -2273,70 +2273,76 @@ namespace JorjeiaAndroidApp
 			public const int Icon = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int Logo = 2130837653;
+			public const int Jorjeia_slogan = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int mr_dialog_material_background_dark = 2130837654;
+			public const int Logo = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int mr_dialog_material_background_light = 2130837655;
+			public const int mr_dialog_material_background_dark = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int mr_ic_audiotrack_light = 2130837656;
+			public const int mr_dialog_material_background_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int mr_ic_cast_dark = 2130837657;
+			public const int mr_ic_audiotrack_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int mr_ic_cast_light = 2130837658;
+			public const int mr_ic_cast_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int mr_ic_close_dark = 2130837659;
+			public const int mr_ic_cast_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int mr_ic_close_light = 2130837660;
+			public const int mr_ic_close_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837661;
+			public const int mr_ic_close_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int mr_ic_media_route_connecting_mono_light = 2130837662;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int mr_ic_media_route_mono_dark = 2130837663;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int mr_ic_media_route_mono_light = 2130837664;
+			public const int mr_ic_media_route_mono_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int mr_ic_pause_dark = 2130837665;
+			public const int mr_ic_media_route_mono_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int mr_ic_pause_light = 2130837666;
+			public const int mr_ic_pause_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int mr_ic_play_dark = 2130837667;
+			public const int mr_ic_pause_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int mr_ic_play_light = 2130837668;
-			
-			// aapt resource value: 0x7f0200aa
-			public const int notification_template_icon_bg = 2130837674;
+			public const int mr_ic_play_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int Splash = 2130837669;
+			public const int mr_ic_play_light = 2130837669;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int notification_template_icon_bg = 2130837676;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int splash_logo = 2130837670;
+			public const int Small_logo = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int splash_screen = 2130837671;
+			public const int Splash = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int water = 2130837672;
+			public const int splash_logo = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int water_bottle = 2130837673;
+			public const int splash_screen = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int water = 2130837674;
+			
+			// aapt resource value: 0x7f0200ab
+			public const int water_bottle = 2130837675;
 			
 			static Drawable()
 			{
@@ -2351,8 +2357,8 @@ namespace JorjeiaAndroidApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070090
-			public const int about = 2131165328;
+			// aapt resource value: 0x7f070091
+			public const int about = 2131165329;
 			
 			// aapt resource value: 0x7f070095
 			public const int about2Button = 2131165333;
@@ -2423,8 +2429,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070045
 			public const int buttonPanel = 2131165253;
 			
-			// aapt resource value: 0x7f070080
-			public const int calendarBtn = 2131165312;
+			// aapt resource value: 0x7f070081
+			public const int calendarBtn = 2131165313;
 			
 			// aapt resource value: 0x7f070098
 			public const int calendar_grid = 2131165336;
@@ -2453,8 +2459,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070077
 			public const int callTextView = 2131165303;
 			
-			// aapt resource value: 0x7f070082
-			public const int cameracCurrBtn = 2131165314;
+			// aapt resource value: 0x7f070083
+			public const int cameracCurrBtn = 2131165315;
 			
 			// aapt resource value: 0x7f0700b8
 			public const int cancel_action = 2131165368;
@@ -2489,8 +2495,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070075
 			public const int confirmYesBtn = 2131165301;
 			
-			// aapt resource value: 0x7f070091
-			public const int contacts = 2131165329;
+			// aapt resource value: 0x7f070092
+			public const int contacts = 2131165330;
 			
 			// aapt resource value: 0x7f070096
 			public const int contacts2Button = 2131165334;
@@ -2516,20 +2522,20 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070041
 			public const int default_activity_button = 2131165249;
 			
-			// aapt resource value: 0x7f070085
-			public const int design_bottom_sheet = 2131165317;
+			// aapt resource value: 0x7f070086
+			public const int design_bottom_sheet = 2131165318;
+			
+			// aapt resource value: 0x7f07008d
+			public const int design_menu_item_action_area = 2131165325;
 			
 			// aapt resource value: 0x7f07008c
-			public const int design_menu_item_action_area = 2131165324;
+			public const int design_menu_item_action_area_stub = 2131165324;
 			
 			// aapt resource value: 0x7f07008b
-			public const int design_menu_item_action_area_stub = 2131165323;
+			public const int design_menu_item_text = 2131165323;
 			
 			// aapt resource value: 0x7f07008a
-			public const int design_menu_item_text = 2131165322;
-			
-			// aapt resource value: 0x7f070089
-			public const int design_navigation_view = 2131165321;
+			public const int design_navigation_view = 2131165322;
 			
 			// aapt resource value: 0x7f07000f
 			public const int disableHome = 2131165199;
@@ -2606,11 +2612,11 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070042
 			public const int list_item = 2131165250;
 			
-			// aapt resource value: 0x7f070092
-			public const int logoImageView = 2131165330;
+			// aapt resource value: 0x7f070080
+			public const int logoImageView = 2131165312;
 			
-			// aapt resource value: 0x7f070083
-			public const int mainMenu2btn = 2131165315;
+			// aapt resource value: 0x7f070084
+			public const int mainMenu2btn = 2131165316;
 			
 			// aapt resource value: 0x7f0700ba
 			public const int media_actions = 2131165370;
@@ -2696,8 +2702,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070017
 			public const int multiply = 2131165207;
 			
-			// aapt resource value: 0x7f070088
-			public const int navigation_header_container = 2131165320;
+			// aapt resource value: 0x7f070089
+			public const int navigation_header_container = 2131165321;
 			
 			// aapt resource value: 0x7f070022
 			public const int never = 2131165218;
@@ -2705,8 +2711,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070093
 			public const int newMission2Button = 2131165331;
 			
-			// aapt resource value: 0x7f07008f
-			public const int newMissionButton = 2131165327;
+			// aapt resource value: 0x7f070090
+			public const int newMissionButton = 2131165328;
 			
 			// aapt resource value: 0x7f070070
 			public const int nextCButton = 2131165296;
@@ -2744,8 +2750,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f07006c
 			public const int notifYesBtn = 2131165292;
 			
-			// aapt resource value: 0x7f07008e
-			public const int okButton = 2131165326;
+			// aapt resource value: 0x7f07008f
+			public const int okButton = 2131165327;
 			
 			// aapt resource value: 0x7f070029
 			public const int parallax = 2131165225;
@@ -2801,8 +2807,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070031
 			public const int right = 2131165233;
 			
-			// aapt resource value: 0x7f070081
-			public const int scheduleBtn = 2131165313;
+			// aapt resource value: 0x7f070082
+			public const int scheduleBtn = 2131165314;
 			
 			// aapt resource value: 0x7f070018
 			public const int screen = 2131165208;
@@ -2873,11 +2879,11 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f0700d1
 			public const int sliding_tabs = 2131165393;
 			
-			// aapt resource value: 0x7f070087
-			public const int snackbar_action = 2131165319;
+			// aapt resource value: 0x7f070088
+			public const int snackbar_action = 2131165320;
 			
-			// aapt resource value: 0x7f070086
-			public const int snackbar_text = 2131165318;
+			// aapt resource value: 0x7f070087
+			public const int snackbar_text = 2131165319;
 			
 			// aapt resource value: 0x7f070028
 			public const int snap = 2131165224;
@@ -2927,8 +2933,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f0700bf
 			public const int text2 = 2131165375;
 			
-			// aapt resource value: 0x7f07008d
-			public const int text22View = 2131165325;
+			// aapt resource value: 0x7f07008e
+			public const int text22View = 2131165326;
 			
 			// aapt resource value: 0x7f070071
 			public const int textCameraView1 = 2131165297;
@@ -2960,8 +2966,8 @@ namespace JorjeiaAndroidApp
 			// aapt resource value: 0x7f070048
 			public const int topPanel = 2131165256;
 			
-			// aapt resource value: 0x7f070084
-			public const int touch_outside = 2131165316;
+			// aapt resource value: 0x7f070085
+			public const int touch_outside = 2131165317;
 			
 			// aapt resource value: 0x7f070009
 			public const int up = 2131165193;

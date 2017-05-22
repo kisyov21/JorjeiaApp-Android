@@ -115,6 +115,8 @@
         <Button
             android:text="Напред"
             android:id="@+id/nextWeightButton"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

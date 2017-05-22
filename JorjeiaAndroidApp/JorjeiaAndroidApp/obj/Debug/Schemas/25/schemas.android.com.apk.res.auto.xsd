@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>21.5.2017 г. 20:58:57</xs:documentation>
+    <xs:documentation>22.5.2017 г. 23:48:51</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1167,6 +1167,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -1184,6 +1185,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -1676,6 +1678,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -1693,6 +1696,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -2080,6 +2084,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -2097,6 +2102,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -2484,6 +2490,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -2501,6 +2508,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -4607,6 +4615,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -4624,6 +4633,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -5011,6 +5021,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -5028,6 +5039,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -5497,6 +5509,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -5514,6 +5527,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -6122,6 +6136,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -6139,6 +6154,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -6526,6 +6542,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -6543,6 +6560,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -7806,6 +7824,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -7823,6 +7842,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -8210,6 +8230,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -8227,6 +8248,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -8677,6 +8699,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -8694,6 +8717,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -9081,6 +9105,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -9098,6 +9123,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -9581,6 +9607,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -9598,6 +9625,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -10217,6 +10245,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -10234,6 +10263,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -10700,6 +10730,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -10717,6 +10748,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -11298,6 +11330,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -11315,6 +11348,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -11896,6 +11930,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -11913,6 +11948,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -12300,6 +12336,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -12317,6 +12354,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -12786,6 +12824,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -12803,6 +12842,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -13642,6 +13682,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -13659,6 +13700,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -14128,6 +14170,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -14145,6 +14188,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -14532,6 +14576,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -14549,6 +14594,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -15097,6 +15143,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -15114,6 +15161,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -15825,6 +15873,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -15842,6 +15891,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -16229,6 +16279,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -16246,6 +16297,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -16822,6 +16874,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -16839,6 +16892,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -17420,6 +17474,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -17437,6 +17492,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -17906,6 +17962,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -17923,6 +17980,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -18504,6 +18562,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -18521,6 +18580,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -19230,6 +19290,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -19247,6 +19308,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -19634,6 +19696,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -19651,6 +19714,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -21905,6 +21969,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -21922,6 +21987,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -23529,6 +23595,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -23546,6 +23613,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -24127,6 +24195,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -24144,6 +24213,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -24531,6 +24601,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -24548,6 +24619,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -24935,6 +25007,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -24952,6 +25025,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />
@@ -26211,6 +26285,7 @@
             <xs:enumeration value="@drawable/ic_tv_dark" />
             <xs:enumeration value="@drawable/ic_tv_light" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/jorjeia_slogan" />
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_dark" />
             <xs:enumeration value="@drawable/mr_dialog_material_background_light" />
@@ -26228,6 +26303,7 @@
             <xs:enumeration value="@drawable/mr_ic_play_dark" />
             <xs:enumeration value="@drawable/mr_ic_play_light" />
             <xs:enumeration value="@drawable/notification_template_icon_bg" />
+            <xs:enumeration value="@drawable/small_logo" />
             <xs:enumeration value="@drawable/splash" />
             <xs:enumeration value="@drawable/splash_logo" />
             <xs:enumeration value="@drawable/splash_screen" />

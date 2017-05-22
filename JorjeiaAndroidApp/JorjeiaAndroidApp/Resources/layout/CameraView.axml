@@ -8,6 +8,7 @@
     <TextView
         android:text="Направете си снимка, за да откриете разликите по късно!"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#005e09"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textCameraView1"
@@ -22,6 +23,8 @@
         android:gravity="center_horizontal" />
     <Button
         android:text="Стартиране на вашата камера !"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_border_radius"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/takePictureButton"
@@ -36,6 +39,8 @@
         android:layout_gravity="bottom">
         <Button
             android:text="Продължи"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
             android:id="@+id/nextCalendarButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
