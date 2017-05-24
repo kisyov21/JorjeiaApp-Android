@@ -10,7 +10,7 @@
         android:gravity="center_horizontal"
         android:editable="False"
         android:paddingTop="20dp"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textColor="#005e09"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
@@ -25,7 +25,7 @@
             android:text="Вашият пол:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#005e09"
             android:layout_centerInParent="true"
             android:layout_alignParentLeft="false"
@@ -53,7 +53,7 @@
             android:text="Въведете вашата възраст:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#005e09"
             android:layout_centerInParent="true"
             android:layout_alignParentLeft="false"
@@ -71,6 +71,7 @@
             android:id="@+id/ageEditTextView"
             android:background="#f7f9f7"
             android:textColor="#005e09"
+            android:textSize="18dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true" />
     </RelativeLayout>
@@ -84,7 +85,7 @@
             android:text="Въведете вашите килограми:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#005e09"
             android:layout_centerInParent="true"
             android:layout_alignParentLeft="false"
@@ -102,6 +103,7 @@
             android:id="@+id/weightTextView"
             android:background="#f7f9f7"
             android:textColor="#005e09"
+            android:textSize="18dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true" />
     </RelativeLayout>

@@ -128,18 +128,21 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(ScheduleActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MainActivity2));
             StartActivity(intent);
+            Finish();
         }
 
         private void Camera_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CameraActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)
@@ -178,25 +181,31 @@ namespace JorjeiaAndroidApp
         private void ContactsButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(ContactActivity));
+            intent.PutExtra("Main", 1);
             StartActivity(intent);
+            Finish();
         }
 
         private void AboutButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AboutActivity));
+            intent.PutExtra("Main", 1);
             StartActivity(intent);
+            Finish();
         }
 
         private void NewMissionButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(NewMissionIntroActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void CurrentMissionButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
+            Finish();
         }
         #endregion
 

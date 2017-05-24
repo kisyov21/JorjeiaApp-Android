@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using JorjeiaAndroidApp.Resources.DataHelper;
 using JorjeiaAndroidApp.Resources.Model;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -28,6 +29,14 @@ namespace JorjeiaAndroidApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ScheduleView);
             LoadData();
+            SetText();
+            FindViews();
+            HandleEvents();
+            // Create your application here
+        }
+
+        private void SetText()
+        {
             int water = mission.waterInMl;
             switch (mission.typeMission)
             {
@@ -203,14 +212,14 @@ namespace JorjeiaAndroidApp
                     text = "Възникна грешка";
                     break;
             }
-            FindViews();
-            HandleEvents();
-            // Create your application here
         }
+
         private void FindViews()
         {
             newMission = FindViewById<Button>(Resource.Id.nextSButton);
             textView = FindViewById<TextView>(Resource.Id.textCurrentMissionView);
+            //Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            //textView.SetTypeface(tf, TypefaceStyle.Normal);
             textView.Text = text;
         }
 
@@ -223,6 +232,7 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void LoadData()

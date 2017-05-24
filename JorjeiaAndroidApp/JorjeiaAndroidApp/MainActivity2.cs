@@ -51,24 +51,30 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(NewMissionIntroActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void CurrentMissionButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CurrentMissionActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void ContactsButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(ContactActivity));
+            intent.PutExtra("Main", 2);
             StartActivity(intent);
+            Finish();
         }
 
         private void AboutButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AboutActivity));
+            intent.PutExtra("Main", 2);
             StartActivity(intent);
+            Finish();
         }
     }
 }

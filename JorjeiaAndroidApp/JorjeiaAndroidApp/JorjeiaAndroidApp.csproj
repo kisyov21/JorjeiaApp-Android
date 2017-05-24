@@ -165,6 +165,7 @@
     <Compile Include="Utility\NewMission.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\MinionPro-Regular.ttf" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />

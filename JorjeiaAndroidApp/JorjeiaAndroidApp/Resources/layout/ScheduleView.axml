@@ -20,7 +20,7 @@
             android:editable="False"
             android:paddingTop="20dp"
             android:textSize="16dp"
-            android:textColor="#6cb33f"
+            android:textColor="#005e09"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />

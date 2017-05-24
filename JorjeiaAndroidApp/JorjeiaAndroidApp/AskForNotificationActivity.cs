@@ -94,7 +94,7 @@ namespace JorjeiaAndroidApp
                 datetime = datetime.Date + ts;
                 var triggerTime = Convert.ToInt64(GetTimeInterval(datetime));
 
-                manager.SetRepeating(AlarmType.RtcWakeup, triggerTime, AlarmManager.IntervalDay, pendingIntent);
+                manager.SetInexactRepeating(AlarmType.RtcWakeup, triggerTime, AlarmManager.IntervalDay, pendingIntent);
             //}
         }
 

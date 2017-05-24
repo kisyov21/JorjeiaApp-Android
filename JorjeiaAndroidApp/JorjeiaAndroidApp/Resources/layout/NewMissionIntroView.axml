@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:editable="False"
         android:paddingTop="20dp"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textColor="#005e09"
         android:gravity="center"
         android:layout_marginLeft="20dp"

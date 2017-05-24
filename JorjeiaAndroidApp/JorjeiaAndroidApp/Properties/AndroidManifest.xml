@@ -3,5 +3,5 @@
 	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.CALL_PHONE" />
-	<application android:label="JorjeiaAndroidApp" android:icon="@drawable/Icon"></application>
+	<application android:label="Jorjeia" android:icon="@drawable/Icon"></application>
 </manifest>
