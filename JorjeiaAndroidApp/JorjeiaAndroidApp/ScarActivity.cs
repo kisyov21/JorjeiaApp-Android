@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -21,6 +22,9 @@ namespace JorjeiaAndroidApp
         RadioButton button3;
         RadioButton button4;
         RadioButton button5;
+        TextView text1;
+        TextView text2;
+
         int scarType = 0;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -75,6 +79,16 @@ namespace JorjeiaAndroidApp
             button3 = FindViewById<RadioButton>(Resource.Id.radioButton3);
             button4 = FindViewById<RadioButton>(Resource.Id.radioButton4);
             button5 = FindViewById<RadioButton>(Resource.Id.radioButton5);
+            text1 = FindViewById<TextView>(Resource.Id.textS1);
+            text2 = FindViewById<TextView>(Resource.Id.textS2);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
+            text2.SetTypeface(tf, TypefaceStyle.Normal);
+            button1.SetTypeface(tf, TypefaceStyle.Normal);
+            button2.SetTypeface(tf, TypefaceStyle.Normal);
+            button3.SetTypeface(tf, TypefaceStyle.Normal);
+            button4.SetTypeface(tf, TypefaceStyle.Normal);
+            button5.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void NextButton_Click(object sender, EventArgs e)

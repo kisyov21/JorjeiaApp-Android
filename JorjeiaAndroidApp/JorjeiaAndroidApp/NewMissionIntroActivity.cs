@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -16,6 +17,8 @@ namespace JorjeiaAndroidApp
     public class NewMissionIntroActivity : Activity
     {
         private Button newMission;
+        private TextView text1;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,7 +31,10 @@ namespace JorjeiaAndroidApp
 
         private void FindViews()
         {
-            newMission = FindViewById<Button>(Resource.Id.nextNMIButton);            
+            newMission = FindViewById<Button>(Resource.Id.nextNMIButton);
+            text1 = FindViewById<TextView>(Resource.Id.textNMI);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void HandleEvents()

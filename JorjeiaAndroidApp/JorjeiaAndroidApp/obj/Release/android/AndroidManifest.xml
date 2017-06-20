@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="JorjeiaAndroidApp.JorjeiaAndroidApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
-  <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.CALL_PHONE" />
-  <application android:label="JorjeiaAndroidApp" android:icon="@drawable/icon" android:theme="@android:style/Theme.Material.Light" android:name="android.app.Application" android:allowBackup="true">
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="Jorjeia" android:icon="@drawable/icon" android:theme="@android:style/Theme.Material.Light" android:name="android.app.Application" android:allowBackup="true">
     <activity android:label="AboutActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.AboutActivity" />
     <receiver android:enabled="true" android:name="md5d591c8f9f78c577e6713e8df671ac951.AlarmNotificationReceiver">
       <intent-filter android:priority="-1000">
@@ -22,6 +24,7 @@
     <activity android:label="MissionCreatedActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.MissionCreatedActivity" />
     <activity android:label="NewMissionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionActivity" />
     <activity android:label="NewMissionIntroActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.NewMissionIntroActivity" />
+    <activity android:label="PersonalDetailsActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.PersonalDetailsActivity" />
     <activity android:label="ScarActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.ScarActivity" />
     <activity android:label="ScheduleActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.ScheduleActivity" />
     <activity android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5d591c8f9f78c577e6713e8df671ac951.SplashActivity">

@@ -39,6 +39,7 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(ScheduleActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)
@@ -50,12 +51,14 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(MainActivity2));
             StartActivity(intent);
+            Finish();
         }
 
         private void Camera_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CameraActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void FindViews()

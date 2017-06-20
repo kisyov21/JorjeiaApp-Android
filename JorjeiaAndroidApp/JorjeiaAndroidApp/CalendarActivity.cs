@@ -34,7 +34,7 @@ namespace JorjeiaAndroidApp
             List<DateTime> datesList = new List<DateTime>();
             foreach (var item in list)
             {
-                if (item.IsPassed)
+                if (item.IsPassed || item.IsPassed2 == true)
                 {
                     datesList.Add(item.Date);
                 }

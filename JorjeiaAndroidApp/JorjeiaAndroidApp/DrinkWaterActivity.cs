@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -16,6 +17,7 @@ namespace JorjeiaAndroidApp
     public class DrinkWaterActivity : Activity
     {
         private Button okBtn;
+        private TextView textView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,6 +39,9 @@ namespace JorjeiaAndroidApp
         private void FindViews()
         {
             okBtn = FindViewById<Button>(Resource.Id.okButton);
+            textView = FindViewById<TextView>(Resource.Id.text22View);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            textView.SetTypeface(tf, TypefaceStyle.Normal);
         }
     }
 }

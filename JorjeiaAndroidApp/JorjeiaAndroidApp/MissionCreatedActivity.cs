@@ -12,6 +12,7 @@ using Android.Widget;
 using JorjeiaAndroidApp.Resources.DataHelper;
 using JorjeiaAndroidApp.Resources.Model;
 using JorjeiaAndroidApp.Utility;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -19,6 +20,8 @@ namespace JorjeiaAndroidApp
     public class MissionCreatedActivity : Activity
     {
         private Button continueBtn;
+        private TextView text1;
+
         DataBase db;
         private int type;
 
@@ -26,8 +29,8 @@ namespace JorjeiaAndroidApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MissionCreatedView);
-
-            continueBtn = FindViewById<Button>(Resource.Id.nextMCButton);
+            FindViews();
+            
             continueBtn.Click += continueBtnClick;
             var mission = Intent.GetIntExtra("TypeOfMission", 1);
             var skin =  Intent.GetIntExtra("TypeOfSkin", 1);
@@ -50,7 +53,15 @@ namespace JorjeiaAndroidApp
             db.insertIntoTableSchedule(schedule);
             // Create your application here
         }
-      
+
+        private void FindViews()
+        {
+            continueBtn = FindViewById<Button>(Resource.Id.nextMCButton);
+            text1 = FindViewById<TextView>(Resource.Id.textViewmc1);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
+        }
+
         private void continueBtnClick(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AskForNotificationActivity));

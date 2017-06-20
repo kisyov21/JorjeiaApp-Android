@@ -146,6 +146,7 @@
     <Compile Include="CameraIntroActivity.cs" />
     <Compile Include="ContactActivity.cs" />
     <Compile Include="CurrentMissionActivity.cs" />
+    <Compile Include="DataHelper\DataBase.cs" />
     <Compile Include="DrinkWaterActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainActivity2.cs" />
@@ -153,7 +154,6 @@
     <Compile Include="NewMissionActivity.cs" />
     <Compile Include="NewMissionIntroActivity.cs" />
     <Compile Include="PersonalDetailsActivity.cs" />
-    <Compile Include="Resources\DataHelper\DataBase.cs" />
     <Compile Include="Resources\Model\Mission.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -234,6 +234,9 @@
     <AndroidResource Include="Resources\layout\PersonalDetailsView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\MissionFinish.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -266,6 +269,33 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Small_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\facebooktabs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\waatter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\DataHelper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_m33.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\..\THEGREATEST\CalendarTest\CalendarTest\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\..\THEGREATEST\CalendarTest\CalendarTest\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

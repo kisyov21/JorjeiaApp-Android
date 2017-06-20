@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -16,6 +17,9 @@ namespace JorjeiaAndroidApp
     public class AboutActivity : Activity
     {
         Button back;
+        TextView text1;
+        TextView text2;
+
         int main;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,6 +34,12 @@ namespace JorjeiaAndroidApp
         private void FindViews()
         {
             back = FindViewById<Button>(Resource.Id.backAboutButton);
+            text1 = FindViewById<TextView>(Resource.Id.textViewab1);
+            text2 = FindViewById<TextView>(Resource.Id.textViewab2);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
+            text2.SetTypeface(tf, TypefaceStyle.Normal);
+
         }
 
         private void HandleEvents()

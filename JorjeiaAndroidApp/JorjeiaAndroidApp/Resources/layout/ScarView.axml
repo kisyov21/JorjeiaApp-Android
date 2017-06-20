@@ -16,20 +16,22 @@
             android:text="Тъй като използвате Мисия 1, остава да посочите още една подробност за себе си."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/textS1" 
             android:editable="False"
             android:paddingTop="10dp"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#005e09"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />
         <TextView
             android:text="На колко време са Вашите стрии?"
+            android:id="@+id/textS2" 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="False"
             android:paddingTop="20dp"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#005e09"
             android:gravity="start"
             android:layout_marginLeft="20dp"
@@ -49,30 +51,35 @@
                 android:textColor="#005e09"
                 android:checked="true"
                 android:text="От 1 месец"
+                android:textSize="17dp"
                 android:id="@+id/radioButton1" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#005e09"
                 android:text="От 6 месец"
+                android:textSize="17dp"
                 android:id="@+id/radioButton2" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#005e09"
                 android:text="От 12 месец"
+                android:textSize="17dp"
                 android:id="@+id/radioButton3" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#005e09"
                 android:text="От 24 месец"
+                android:textSize="17dp"
                 android:id="@+id/radioButton4" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#005e09"
                 android:text="Повече от 24 месеца"
+                android:textSize="17dp"
                 android:id="@+id/radioButton5" />
         </RadioGroup>
         <RelativeLayout

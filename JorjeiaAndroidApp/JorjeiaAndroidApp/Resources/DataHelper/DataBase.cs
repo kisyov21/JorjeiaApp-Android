@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,7 +65,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
                     {
                         connection.Insert(item);
                     }
-                    
+
                     return true;
                 }
             }
@@ -114,7 +114,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
                 {
-                    return connection.Table<Schedule>().Where(s => s.IsPassed==true).ToList();
+                    return connection.Table<Schedule>().Where(s => s.IsPassed == true || s.IsPassed2 == true).ToList();
                 }
             }
             catch (SQLiteException ex)
@@ -126,11 +126,21 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
 
         public bool updateTableSchedule(DateTime date)
         {
+            TimeSpan end = new TimeSpan(12, 0, 0); //12 o'clock
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
                 {
-                    connection.Query<Mission>("UPDATE Schedule set IsPassed=? Where Date=? ", true, date);
+                    if (now < end)
+                    {
+                        connection.Query<Mission>("UPDATE Schedule set IsPassed=? Where Date=? ", true, date);
+                    }
+                    else
+                    {
+                        connection.Query<Mission>("UPDATE Schedule set IsPassed2=? Where Date=? ", true, date);
+                    }
                     return true;
                 }
             }

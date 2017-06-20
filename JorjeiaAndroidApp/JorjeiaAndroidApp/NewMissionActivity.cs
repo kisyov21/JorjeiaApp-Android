@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using JorjeiaAndroidApp.Utility;
 using JorjeiaAndroidApp.Resources.Model;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -20,6 +21,8 @@ namespace JorjeiaAndroidApp
         private Spinner skinSpinner;
         private Spinner missionsSpinner;
         private Button nextButton;
+        private TextView text2;
+        private TextView text1;
 
         private string skin= "Суха";
         private string missions = "Мисия 1";
@@ -41,6 +44,11 @@ namespace JorjeiaAndroidApp
             nextButton = FindViewById<Button>(Resource.Id.nextNMButton);
             skinSpinner = FindViewById<Spinner>(Resource.Id.spinnerSkinType);
             missionsSpinner = FindViewById<Spinner>(Resource.Id.spinnerMissionsType);
+            text1 = FindViewById<TextView>(Resource.Id.textNM1);
+            text2 = FindViewById<TextView>(Resource.Id.textNM2);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
+            text2.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void HandleEvents()
@@ -66,7 +74,7 @@ namespace JorjeiaAndroidApp
             };
             var missions = new string[]
             {
-                "Мисия 1", "Мисия 2","Мисия 3","Мисия 1+2","Мисия 1+3","Мисия 2+3","Мисия 1+2+3","Мисия 1 FOR MEN","Мисия 3 + 1 FOR MEN"
+                "Мисия 1", "Мисия 2","Мисия 1 + 2","Мисия 1 + 3","Мисия 2 + 3","Мисия 1 + 2 + 3","Мисия 1 за мъже","Мисия 3 + 1 за мъже"
             };
         
            
@@ -115,10 +123,10 @@ namespace JorjeiaAndroidApp
                 case "Мисия 1 + 2 + 3":
                     typeOfMission = 6;
                     break;
-                case "Мисия 1 FOR MEN":
+                case "Мисия 1 за мъже":
                     typeOfMission = 7;
                     break;
-                case "Мисия 3 + 1 FOR MEN":
+                case "Мисия 3 + 1 за мъже":
                     typeOfMission = 8;
                     break;
             }

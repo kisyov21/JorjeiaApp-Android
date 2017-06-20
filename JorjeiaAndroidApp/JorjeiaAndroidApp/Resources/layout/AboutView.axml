@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@drawable/background_m11"
     android:layout_height="match_parent">
     <ImageView
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/textViewab1"
         android:layout_margin="10dp" />
     <TextView
         android:text="Създадени с мисия – създадени за теб!"
@@ -30,7 +31,7 @@
         android:textColor="#005e09"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/textViewab2"
         android:layout_margin="10dp"
         android:gravity="center_horizontal" />
     <RelativeLayout

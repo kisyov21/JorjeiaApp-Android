@@ -34,14 +34,14 @@ namespace JorjeiaAndroidApp.Utility
                 case 1:
                     while(days < 61)
                     {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
+                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
                         days++;
                     }
                     break;
                 case 2:
                     while (days < 91)
                     {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false });
+                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
                         days++;
                     }
                     break;

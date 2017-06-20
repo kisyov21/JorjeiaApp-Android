@@ -8,6 +8,7 @@ using JorjeiaAndroidApp.Resources.Model;
 using System.Collections.Generic;
 using Android.Util;
 using Android.Support.V7.App;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -33,6 +34,8 @@ namespace JorjeiaAndroidApp
         private Button yesBtn;
         private Button noBtn;
 
+
+        private TextView textView;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -42,6 +45,10 @@ namespace JorjeiaAndroidApp
             Log.Info("DB_PATH", folder);
 
             LoadData();
+
+            TimeSpan end = new TimeSpan(12, 0, 0); //12 o'clock
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
             if (lstSource.Count != 0 && lstSource != null ) // dali ima misiq
             {
                 if (lstSource[0].hasMission == 1) //dali e svyrshila
@@ -50,13 +57,21 @@ namespace JorjeiaAndroidApp
                     if (day > lstSchedule[lstSchedule.Count - 1].Date)
                     {
                         db.updateTableMission();
-                        //TODO pozdravleniq zavyrshite cikyla
+                        SetContentView(Resource.Layout.MissionFinish);
+                        FindViews4();
+                        HandleEvents4();
                     }
                     else if (list != null)
                     {
                         foreach (var item in list)
                         {
-                            if (item.IsPassed)
+                            if (item.IsPassed && now < end)
+                            {
+                                SetContentView(Resource.Layout.CurrentMissionView);
+                                FindViews2();
+                                HandleEvents2();
+                            }
+                            else if (item.IsPassed2 && now >= end)
                             {
                                 SetContentView(Resource.Layout.CurrentMissionView);
                                 FindViews2();
@@ -86,6 +101,26 @@ namespace JorjeiaAndroidApp
             }
 
         }
+
+        private void HandleEvents4()
+        {
+            yesBtn.Click += YesButton2_Click;
+        }
+
+        private void YesButton2_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(MainActivity2));
+            StartActivity(intent);
+            Finish();
+        }
+
+        private void FindViews4()
+        {
+            yesBtn = FindViewById<Button>(Resource.Id.finishYesBtn);
+            textView = FindViewById<TextView>(Resource.Id.finishTextView);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            textView.SetTypeface(tf, TypefaceStyle.Normal);
+        }
         #region Confirmation View
         private void HandleEvents3()
         {
@@ -112,6 +147,9 @@ namespace JorjeiaAndroidApp
         {
             yesBtn = FindViewById<Button>(Resource.Id.confirmYesBtn);
             noBtn = FindViewById<Button>(Resource.Id.confirmNoBtn);
+            textView = FindViewById<TextView>(Resource.Id.textViewc);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            textView.SetTypeface(tf, TypefaceStyle.Normal);
         }
         #endregion
 

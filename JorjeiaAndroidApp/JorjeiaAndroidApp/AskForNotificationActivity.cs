@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,21 +9,32 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
 
-    [Activity(Label = "AskForNotificationActivity", Theme="@style/Theme.AppCompat.Light.NoActionBar")]
+    [Activity(Label = "AskForNotificationActivity", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class AskForNotificationActivity : Activity
     {
         private Button yesBtn;
         private Button noBtn;
+        private TextView text1;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.AskForNotificationView);
-            FindViews();
-            HandleEvents();
+            try
+            {
+                base.OnCreate(savedInstanceState);
+                SetContentView(Resource.Layout.AskForNotificationView);
+                FindViews();
+                HandleEvents();
+            }
+            catch (Exception ex)
+            {
+                var m = ex.Message;                throw;
+            }
+        
         }
 
         private void HandleEvents()
@@ -51,6 +62,9 @@ namespace JorjeiaAndroidApp
         {
             yesBtn = FindViewById<Button>(Resource.Id.notifYesBtn);
             noBtn = FindViewById<Button>(Resource.Id.notifNoBtn);
+            text1 = FindViewById<TextView>(Resource.Id.textViewas1);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void StartAlarm()
@@ -61,7 +75,7 @@ namespace JorjeiaAndroidApp
             PendingIntent pendingIntent;
             myIntent = new Intent(this, typeof(AlarmNotificationReceiver));
             pendingIntent = PendingIntent.GetBroadcast(this, 0, myIntent, 0);
-            
+
 
             //if (!isRepeating)
             //{
@@ -87,15 +101,36 @@ namespace JorjeiaAndroidApp
 
             //else
             //{
-                var triggerAtMilis = SystemClock.ElapsedRealtime() + 3000;
+            var triggerAtMilis = SystemClock.ElapsedRealtime() + 3000;
 
-                var datetime = DateTime.Now;
-                TimeSpan ts = new TimeSpan(20, 35, 0);
-                datetime = datetime.Date + ts;
-                var triggerTime = Convert.ToInt64(GetTimeInterval(datetime));
+            var datetime = DateTime.Now;
+            TimeSpan ts = new TimeSpan(20, 35, 0);
+            datetime = datetime.Date + ts;
+            var triggerTime = Convert.ToInt64(GetTimeInterval(datetime));
 
-                manager.SetInexactRepeating(AlarmType.RtcWakeup, triggerTime, AlarmManager.IntervalDay, pendingIntent);
+            manager.SetRepeating(AlarmType.RtcWakeup, triggerTime, AlarmManager.IntervalDay, pendingIntent);
             //}
+        }
+
+        public void StartAlarm2()
+        {
+            AlarmManager manager = (AlarmManager)GetSystemService(Context.AlarmService);
+            Intent myIntent;
+            PendingIntent pendingIntent;
+            myIntent = new Intent(this, typeof(AlarmNotificationReceiver));
+            pendingIntent = PendingIntent.GetBroadcast(this, 0, myIntent, 0);
+
+            var triggerAtMilis = SystemClock.ElapsedRealtime() + 3000;
+
+            var datetime = DateTime.Now;
+            TimeSpan ts = new TimeSpan(20, 35, 0);
+            datetime = datetime.Date + ts;
+            var triggerTime = Convert.ToInt64(GetTimeInterval(datetime));
+
+            if (Convert.ToInt32(Android.OS.Build.VERSION.Sdk) >= 23)
+                manager.SetExactAndAllowWhileIdle(AlarmType.RtcWakeup, triggerTime, pendingIntent);
+            else
+                manager.SetExact(AlarmType.RtcWakeup, triggerTime, pendingIntent);
         }
 
         public double GetTimeInterval(DateTime dt)

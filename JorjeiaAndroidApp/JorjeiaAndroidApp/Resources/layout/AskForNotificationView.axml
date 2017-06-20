@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/background_m33"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Желате ли да получавате известие ежедневно от приложението на Jorjeia?"
+        android:text="Желате ли да получавате известие ежедневно от приложението на Jorjeia, за да ви напомня за вашето мазане?"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#005e09"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/textViewas1"
         android:layout_margin="10dp"
         android:gravity="center_horizontal" />
     <LinearLayout

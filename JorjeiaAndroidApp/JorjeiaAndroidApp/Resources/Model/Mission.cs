@@ -28,6 +28,7 @@ namespace JorjeiaAndroidApp.Resources.Model
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public bool IsPassed { get; set; }
+        public bool IsPassed2 { get; set; }
         //public Schedule(DateTime date)
         //{
         //    this.Date = date;

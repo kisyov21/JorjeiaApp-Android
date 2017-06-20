@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@drawable/background_m11"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -17,8 +18,9 @@
         android:gravity="center_horizontal"
         android:editable="False"
         android:paddingTop="20dp"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textColor="#005e09"
+        android:id="@+id/textViewmc1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
     <RelativeLayout

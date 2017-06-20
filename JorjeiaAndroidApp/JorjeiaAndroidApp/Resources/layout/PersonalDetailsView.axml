@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@drawable/background_m11"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
         android:text="От изключитено значение за постигане на желаните резултати е дневния прием на вода. Моля попълнете коректно полетата, за да ви бъде изчислен минималния дневен прием на вода."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/textPD1"
         android:gravity="center_horizontal"
         android:editable="False"
         android:paddingTop="20dp"
@@ -23,6 +25,7 @@
         android:layout_marginTop="15dp">
         <TextView
             android:text="Вашият пол:"
+            android:id="@+id/textPD2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18dp"
@@ -51,6 +54,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:text="Въведете вашата възраст:"
+            android:id="@+id/textPD3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18dp"
@@ -83,6 +87,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:text="Въведете вашите килограми:"
+            android:id="@+id/textPD4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18dp"

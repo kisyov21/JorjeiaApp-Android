@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using JorjeiaAndroidApp.Utility;
+using Android.Graphics;
 
 namespace JorjeiaAndroidApp
 {
@@ -20,6 +21,10 @@ namespace JorjeiaAndroidApp
         private Spinner genderSpinner;
         private EditText weight;
         private Button nextButton;
+        private TextView text1;
+        private TextView text2;
+        private TextView text3;
+        private TextView text4;
 
         private string gender = "Жена";
 
@@ -42,6 +47,17 @@ namespace JorjeiaAndroidApp
             nextButton = FindViewById<Button>(Resource.Id.nextWeightButton);
             genderSpinner = FindViewById<Spinner>(Resource.Id.spinnerGender);
             weight = FindViewById<EditText>(Resource.Id.weightTextView);
+            text1 = FindViewById<TextView>(Resource.Id.textPD1);
+            text2 = FindViewById<TextView>(Resource.Id.textPD2);
+            text3 = FindViewById<TextView>(Resource.Id.textPD3);
+            text4 = FindViewById<TextView>(Resource.Id.textPD4);
+            Typeface tf = Typeface.CreateFromAsset(Assets, "MinionPro-Regular.ttf");
+            text1.SetTypeface(tf, TypefaceStyle.Normal);
+            text2.SetTypeface(tf, TypefaceStyle.Normal);
+            text3.SetTypeface(tf, TypefaceStyle.Normal);
+            text4.SetTypeface(tf, TypefaceStyle.Normal);
+            weight.SetTypeface(tf, TypefaceStyle.Normal);
+            age.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void HandleEvents()
@@ -54,7 +70,7 @@ namespace JorjeiaAndroidApp
             years = Convert.ToInt32(age.Text);
             weightK = Convert.ToInt32(weight.Text);
             Intent intent;
-            if (mission == 1)
+            if (mission == 1 || mission == 3 || mission == 4 || mission == 6)
             {
                 intent = new Intent(this, typeof(ScarActivity));
             }
