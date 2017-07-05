@@ -37,6 +37,13 @@ namespace JorjeiaAndroidApp
         
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(CurrentMissionActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void HandleEvents()
         {
             yesBtn.Click += YesButton_Click;

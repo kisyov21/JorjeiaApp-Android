@@ -16,7 +16,7 @@
             android:text="Тъй като използвате Мисия 1, остава да посочите още една подробност за себе си."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textS1" 
+            android:id="@+id/textS1"
             android:editable="False"
             android:paddingTop="10dp"
             android:textSize="18dp"
@@ -25,8 +25,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />
         <TextView
-            android:text="На колко време са Вашите стрии?"
-            android:id="@+id/textS2" 
+            android:text="От колко време са Вашите стрии?"
+            android:id="@+id/textS2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="False"

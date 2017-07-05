@@ -31,6 +31,13 @@ namespace JorjeiaAndroidApp
             HandleEvents();
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void FindViews()
         {
             back = FindViewById<Button>(Resource.Id.backAboutButton);

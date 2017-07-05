@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Изпълнихте ли препоръчаното мазане от нас ?"
+        android:text="Изпълнихте ли препоръчаното нанасяне от нас ?"
         android:textColor="#005e09"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"

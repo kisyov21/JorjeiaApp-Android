@@ -46,6 +46,7 @@ namespace JorjeiaAndroidApp
         {
             var intent = new Intent(this, typeof(CalendarActivity));
             StartActivity(intent);
+            Finish();
         }
         private void MainMenu_Click(object sender, EventArgs e)
         {

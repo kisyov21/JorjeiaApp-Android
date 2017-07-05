@@ -69,6 +69,13 @@ namespace JorjeiaAndroidApp
             Finish();
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(AskForNotificationActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void SetTypeOfMission(int mission, int skin, int age, int scar)
         {
             ////missions : 1-mission 1, 2-mission 2, 3-mission 1+2, 4-mission 1+3, 5-mission 2+3, 6-mission 1+2+3, 7-mission men, 8-mission men + mission 3

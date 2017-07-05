@@ -31,7 +31,12 @@ namespace JorjeiaAndroidApp
 
             HandleEvents();
         }
-
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(NewMissionIntroActivity));
+            StartActivity(intent);
+            Finish();
+        }
         private void HandleEvents()
         {
             skipCameraButton.Click += SkipCamera_Click;

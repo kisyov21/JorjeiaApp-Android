@@ -193,21 +193,54 @@ namespace JorjeiaAndroidApp
         //this method will be called automatically after the user has completed taken the image with the camera activity
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
-            //specify what the required width and height for my image should be
-            int height = rayPictureImageView.Height;
-            int width = rayPictureImageView.Width;
+            ////specify what the required width and height for my image should be
+            //int height = rayPictureImageView.Height;
+            //int width = rayPictureImageView.Width;
 
-            //then I call my ImageHelper.GetImageBitmapFromFilePath
-            //imageBitmap = ImageHelper.GetImageBitmapFromFilePath(imageFile.Path, width, height);
-            Bitmap imageBitmap = (Bitmap)data.Extras.Get("data");
-            if (imageBitmap != null) //if that went ok, I'm going to set the bitmap for my imageView
+            ////then I call my ImageHelper.GetImageBitmapFromFilePath
+            ////imageBitmap = ImageHelper.GetImageBitmapFromFilePath(imageFile.Path, width, height);
+            //Bitmap imageBitmap = (Bitmap)data.Extras.Get("data");
+            //if (imageBitmap != null) //if that went ok, I'm going to set the bitmap for my imageView
+            //{
+            //    rayPictureImageView.SetImageBitmap(imageBitmap);
+            //    imageBitmap = null;
+            //}
+
+            ////required to avoid memory leaks!
+            //GC.Collect();
+            var mission = Intent.GetIntExtra("TypeOfMission", 0);
+            Intent intent;
+            if (mission != 0)
             {
-                rayPictureImageView.SetImageBitmap(imageBitmap);
-                imageBitmap = null;
+                intent = new Intent(this, typeof(MissionCreatedActivity));
+                intent.PutExtra("TypeOfMission", Intent.GetIntExtra("TypeOfMission", 0));
+                intent.PutExtra("TypeOfSkin", Intent.GetIntExtra("TypeOfSkin", 0));
+                intent.PutExtra("Ages", Intent.GetIntExtra("Ages", 0));
+                intent.PutExtra("Scar", Intent.GetIntExtra("Scar", 0));
+                intent.PutExtra("Weight", Intent.GetIntExtra("Weight", 45));
             }
+            else
+            {
+                intent = new Intent(this, typeof(CurrentMissionActivity));
+            }
+            StartActivity(intent);
+            Finish();
+        }
 
-            //required to avoid memory leaks!
-            GC.Collect();
+        public override void OnBackPressed()
+        {
+            var mission = Intent.GetIntExtra("TypeOfMission", 0);
+            Intent intent;
+            if (mission != 0)
+            {
+                intent = new Intent(this, typeof(NewMissionIntroActivity));
+            }
+            else
+            {
+                intent = new Intent(this, typeof(CurrentMissionActivity));
+            }
+            StartActivity(intent);
+            Finish();
         }
 
     }

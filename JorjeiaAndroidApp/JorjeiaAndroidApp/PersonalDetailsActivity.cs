@@ -41,6 +41,14 @@ namespace JorjeiaAndroidApp
             HandleEvents();
             // Create your application here
         }
+
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(NewMissionIntroActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void FindViews()
         {
             age = FindViewById<EditText>(Resource.Id.ageEditTextView);

@@ -12,7 +12,7 @@
         android:paddingLeft="40dp"
         android:paddingRight="40dp" />
     <TextView
-        android:text="Успешно създадохте план за мазане !"
+        android:text="Успешно създадохте план за нанасяне !"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"

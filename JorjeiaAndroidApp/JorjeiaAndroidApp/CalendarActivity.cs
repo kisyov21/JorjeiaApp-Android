@@ -34,7 +34,7 @@ namespace JorjeiaAndroidApp
             List<DateTime> datesList = new List<DateTime>();
             foreach (var item in list)
             {
-                if (item.IsPassed || item.IsPassed2 == true)
+                if (item.IsPassed && item.IsPassed2)
                 {
                     datesList.Add(item.Date);
                 }
@@ -43,6 +43,13 @@ namespace JorjeiaAndroidApp
 
 
             LoadApplication(new App(datesList));
+        }
+
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(CurrentMissionActivity));
+            StartActivity(intent);
+            Finish();
         }
     }
 }

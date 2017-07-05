@@ -44,6 +44,13 @@ namespace JorjeiaAndroidApp
             HandleEvents();
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void FindViews()
         {
             phoneNumber1TextView = FindViewById<TextView>(Resource.Id.phoneNumber1TextView);

@@ -12,7 +12,7 @@
         android:paddingLeft="25dp"
         android:paddingRight="25dp" />
     <TextView
-        android:text="Поздравления, Вие завършихте специално изготвения за вас цикъл на мазане!"
+        android:text="Поздравления, Вие завършихте специално изготвения за вас цикъл на нанасяне!"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#005e09"
         android:layout_width="match_parent"

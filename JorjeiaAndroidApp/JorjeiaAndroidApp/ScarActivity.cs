@@ -36,6 +36,13 @@ namespace JorjeiaAndroidApp
             HandleEvents();
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(PersonalDetailsActivity));
+            StartActivity(intent);
+            Finish();
+        }
+
         private void HandleEvents()
         {
             next.Click += NextButton_Click;
