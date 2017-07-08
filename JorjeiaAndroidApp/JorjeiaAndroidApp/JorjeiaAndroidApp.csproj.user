@@ -5,6 +5,6 @@
     <DefaultDevice>5.1" Marshmallow %286.0.0%29 XXHDPI Phone</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault.Light.NoActionBar</AndroidDesignerPreferredTheme>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

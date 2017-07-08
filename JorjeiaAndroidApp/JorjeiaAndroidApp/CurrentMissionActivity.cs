@@ -19,6 +19,7 @@ namespace JorjeiaAndroidApp
         private Button cameraButton;
         private Button scheduleButton;
         private Button mainMenu2Button;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

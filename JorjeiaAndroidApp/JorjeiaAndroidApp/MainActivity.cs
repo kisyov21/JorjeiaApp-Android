@@ -23,6 +23,7 @@ namespace JorjeiaAndroidApp
         private Button cameraButton;
         private Button scheduleButton;
         private Button mainMenu2Button;
+        private Button gallaryButton;
 
         private List<Mission> lstSource;
         private List<Schedule> lstSchedule;
@@ -206,6 +207,7 @@ namespace JorjeiaAndroidApp
             newMissionButton = FindViewById<Button>(Resource.Id.newMissionButton);
             aboutButton = FindViewById<Button>(Resource.Id.about);
             contactsButton = FindViewById<Button>(Resource.Id.contacts);
+            gallaryButton = FindViewById<Button>(Resource.Id.galleryButton);
         }
 
 
@@ -214,8 +216,16 @@ namespace JorjeiaAndroidApp
             newMissionButton.Click += NewMissionButton_Click;
             aboutButton.Click += AboutButton_Click;
             contactsButton.Click += ContactsButton_Click;
+            gallaryButton.Click += GalleryButton_Click;
         }
 
+        private void GalleryButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(GalleryActivity));
+            intent.PutExtra("Main", 2);
+            StartActivity(intent);
+            Finish();
+        }
         private void ContactsButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(ContactActivity));

@@ -26,6 +26,22 @@
             android:layout_marginRight="20dp" />
     </RelativeLayout>
     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Галерия"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/galleryButton"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
         android:paddingTop="10dp"
         android:minWidth="25px"
         android:minHeight="25px"

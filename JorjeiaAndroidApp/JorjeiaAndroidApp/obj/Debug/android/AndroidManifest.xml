@@ -20,6 +20,8 @@
     <activity android:label="ContactActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.ContactActivity" />
     <activity android:label="CurrentMissionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.CurrentMissionActivity" />
     <activity android:label="DrinkWaterActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.DrinkWaterActivity" />
+    <activity android:label="GalleryActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.GalleryActivity" />
+    <activity android:label="GalleryActivity1" android:name="md5d591c8f9f78c577e6713e8df671ac951.GalleryActivity1" />
     <activity android:label="HomeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.MainActivity" />
     <activity android:label="MainActivity2" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.MainActivity2" />
     <activity android:label="MissionCreatedActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md5d591c8f9f78c577e6713e8df671ac951.MissionCreatedActivity" />
@@ -43,4 +45,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

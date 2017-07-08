@@ -13,7 +13,7 @@ public class CalendarPickerView_DateSelectableFilterImplementor
 		__md_methods = 
 			"n_isDateSelectable:(Ljava/util/Date;)Z:GetIsDateSelectable_Ljava_util_Date_Handler:Square.TimesSquare.CalendarPickerView/IDateSelectableFilterInvoker, Square.AndroidTimesSquare\n" +
 			"";
-		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+DateSelectableFilterImplementor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_DateSelectableFilterImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+DateSelectableFilterImplementor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_DateSelectableFilterImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class CalendarPickerView_DateSelectableFilterImplementor
 	{
 		super ();
 		if (getClass () == CalendarPickerView_DateSelectableFilterImplementor.class)
-			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+DateSelectableFilterImplementor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+DateSelectableFilterImplementor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 
