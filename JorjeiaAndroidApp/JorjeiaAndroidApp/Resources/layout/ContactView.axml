@@ -33,6 +33,15 @@
             android:id="@+id/phoneNumber1TextView"
             android:layout_margin="10dp"
             android:gravity="center_horizontal" />
+        <Button
+            android:text="Най-близкия до вас магазин"
+            android:id="@+id/backContactButton"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
         <TextView
             android:text="Харесайте ни и във Facebook!"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -83,28 +92,5 @@
             android:id="@+id/callText7View"
             android:layout_margin="10dp"
             android:gravity="center_horizontal" />-->
-        <RelativeLayout
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom">
-            <Button
-                android:text="Назад"
-                android:id="@+id/backContactButton"
-                android:textColor="#ffffff"
-                android:background="@drawable/button_border_radius"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp" />
-        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

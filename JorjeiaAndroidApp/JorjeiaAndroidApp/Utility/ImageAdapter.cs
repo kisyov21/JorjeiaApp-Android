@@ -18,8 +18,10 @@ namespace JorjeiaAndroidApp.Utility
     {
         public Context context;
         private int[] imageList = {
-            Resource.Drawable.Logo,
-            Resource.Drawable.drink_water
+            Resource.Drawable.scar1,
+            Resource.Drawable.scar2,
+            Resource.Drawable.scar3,
+            Resource.Drawable.scar4
         };
 
         public ImageAdapter(Context c)

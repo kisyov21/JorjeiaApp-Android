@@ -16,6 +16,9 @@
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Maps\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\assets</ResolvedAssetDirectory>
@@ -43,5 +46,8 @@
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Base.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Maps.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

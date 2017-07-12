@@ -28,6 +28,11 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Location.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Xamarin.GooglePlayServices.Tasks.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Java.Interop.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Microsoft.CSharp.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.Android.dll
