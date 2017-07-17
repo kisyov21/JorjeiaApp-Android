@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Net;
+using System.Json;
 
 using Android.App;
 using Android.Content;
@@ -20,6 +23,8 @@ using Android.Gms.Common;
 using Android.Gms.Common.Apis;
 using Android.Gms.Location;
 using Android.Util;
+using JorjeiaAndroidApp.Utility;
+using Newtonsoft.Json;
 
 namespace JorjeiaAndroidApp
 {
@@ -33,7 +38,7 @@ namespace JorjeiaAndroidApp
         private Android.Widget.Button back;
         private int main;
         private Android.Net.Uri Uri;
-
+        private string url = "https://testinglocations.herokuapp.com/getlocations";
         GoogleApiClient apiClient;
         LocationRequest locRequest;
         Location _currentLocation;
@@ -62,6 +67,29 @@ namespace JorjeiaAndroidApp
             InitializeLocationManager();
 
           
+        }
+
+        private async Task<string> FetchWeatherAsync(string url)
+        {
+            // Create an HTTP web request using the URL:
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
+            request.ContentType = "application/json";
+            request.Method = "GET";
+
+            // Send the request to the server and wait for the response:
+            using (WebResponse response = await request.GetResponseAsync())
+            {
+                // Get a stream representation of the HTTP web response:
+                using (Stream stream = response.GetResponseStream())
+                {
+                    // Use this stream to build a JSON document object:
+                    JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+                    Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
+
+                    // Return the JSON document:
+                    return jsonDoc.ToString();
+                }
+            }
         }
 
         bool IsGooglePlayServicesInstalled()
@@ -192,17 +220,14 @@ namespace JorjeiaAndroidApp
             }
         }
 
-        private void OpenGoogleMapsButton_Click(object sender, EventArgs e)
+        private async void OpenGoogleMapsButton_Click(object sender, EventArgs e)
         {
+            string text = await FetchWeatherAsync(url);
+            RootObject locations = JsonConvert.DeserializeObject<RootObject>(text);
+
+            string addres = "";
             //Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:42.649184,23.379688");
 
-            //if (_currentLocation == null)
-            //{
-            //    string message = "Не можем да определим вашето местонахождение. Моля опитайте по-късно.";
-            //    Toast.MakeText(this, message, ToastLength.Long).Show();
-            //    return;
-            //}
-            //FindStore(_currentLocation.Latitude, _currentLocation.Longitude);
 
             if (apiClient.IsConnected)
             {
@@ -217,14 +242,14 @@ namespace JorjeiaAndroidApp
                     }
                     _currentLocation = location;
                 }
-                FindStore(_currentLocation.Latitude, _currentLocation.Longitude);
+                addres = ClosetLocation.GetClosetPoint(_currentLocation, locations);
             }
             else
             {
                 Log.Info("LocationClient", "Please wait for client to connect");
             }
-            
-            string addres = "ул.+„Кръстю+Раковски“+20,+1729+София";
+
+            //addres = "ул. 'Кръстю Раковски' 20, 1729 София";
 
             Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:0,0?q=" + addres);
 
@@ -232,10 +257,10 @@ namespace JorjeiaAndroidApp
             StartActivity(mapIntent);
         }
 
-        private void FindStore(double latitude, double longitude)
-        {
-            //todo:
-        }
+        //private string FindStore(Location location)
+        //{
+        //   return GetClosetPoint(location,)
+        //}
 
         void InitializeLocationManager()
         {
@@ -324,7 +349,7 @@ namespace JorjeiaAndroidApp
             Log.Info("LocationClient", "Connection failed, attempting to reach google play services");
         }
 
-        public void OnLocationChanged(Location location)
+        public void OnLocationChanged(Android.Locations.Location location)
         {
             // This method returns changes in the user's location if they've been requested
 
@@ -338,6 +363,8 @@ namespace JorjeiaAndroidApp
         {
 
         }
+
+
         //protected override void OnResume()
         //{
         //    base.OnResume();

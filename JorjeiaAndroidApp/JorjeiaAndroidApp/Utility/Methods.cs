@@ -49,7 +49,5 @@ namespace JorjeiaAndroidApp.Utility
             return schedule;
 
         }
-
-
     }
 }

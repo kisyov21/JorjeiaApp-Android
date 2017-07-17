@@ -155,6 +155,7 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\JorjeiaAndroidApp.JorjeiaAndroidApp-Signed.apk
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Calendar.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\FormsViewGroup.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Newtonsoft.Json.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\SQLite-net.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\SQLitePCLRaw.batteries_green.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\SQLitePCLRaw.batteries_v2.dll
@@ -190,6 +191,7 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Calendar.pdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\FormsViewGroup.pdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\FormsViewGroup.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Newtonsoft.Json.xml
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\SQLite-net.xml
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\SQLite-net.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\Xamarin.Forms.Core.pdb
@@ -288,8 +290,11 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Core.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.IO.Compression.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Json.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Net.Http.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Numerics.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Runtime.Serialization.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.ServiceModel.Internals.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\bin\Debug\System.Xml.Linq.dll.mdb
@@ -306,8 +311,11 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Core.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.IO.Compression.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Json.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Net.Http.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Numerics.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.dll.mdb
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
