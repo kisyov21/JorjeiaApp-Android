@@ -34,7 +34,7 @@ namespace JorjeiaAndroidApp
         private TextView phoneNumber1TextView;
         private TextView text1;
         private TextView text2;
-        private ImageView phoneNumber2TextView;
+        private ImageView facebookTextView;
         private Android.Widget.Button back;
         private int main;
         private Android.Net.Uri Uri;
@@ -45,6 +45,8 @@ namespace JorjeiaAndroidApp
         //LocationManager _locationManager;
         //string _locationProvider;
         bool _isGooglePlayServicesInstalled;
+        //NetworkInfo networkInfo = connectivityManager.ActiveNetworkInfo;
+        //bool isOnline = networkInfo.IsConnected;
 
         readonly string[] PermissionsLocation =
         {
@@ -54,6 +56,13 @@ namespace JorjeiaAndroidApp
             Manifest.Permission.Internet
             //, more
         };
+
+        enum Method
+        {
+            Call,
+            OpenGoogleMap
+        };
+
 
         const int RequestLocationId = 0;
 
@@ -65,8 +74,6 @@ namespace JorjeiaAndroidApp
             FindViews();
             HandleEvents();
             InitializeLocationManager();
-
-          
         }
 
         private async Task<string> FetchWeatherAsync(string url)
@@ -76,20 +83,38 @@ namespace JorjeiaAndroidApp
             request.ContentType = "application/json";
             request.Method = "GET";
 
-            // Send the request to the server and wait for the response:
-            using (WebResponse response = await request.GetResponseAsync())
+            try
             {
-                // Get a stream representation of the HTTP web response:
-                using (Stream stream = response.GetResponseStream())
-                {
-                    // Use this stream to build a JSON document object:
-                    JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
-                    Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
+                //WebResponse response = await request.GetResponseAsync();
+                WebResponse response = request.GetResponse();
+                Stream stream = response.GetResponseStream();
+                StreamReader sr = new StreamReader(stream);
+                return sr.ReadToEnd();
+                //JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+                // Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
 
-                    // Return the JSON document:
-                    return jsonDoc.ToString();
-                }
+                // Return the JSON document:
+                //return jsonDoc.ToString();
             }
+            catch (Exception ex)
+            {
+                var excep = ex.Message;
+                return "false";
+            }
+            // Send the request to the server and wait for the response:
+            //using (WebResponse response = await request.GetResponseAsync())
+            //{
+            //    // Get a stream representation of the HTTP web response:
+            //    using (Stream stream = response.GetResponseStream())
+            //    {
+            //        // Use this stream to build a JSON document object:
+            //        JsonValue jsonDoc = await Task.Run(() => JsonObject.Load(stream));
+            //        Console.Out.WriteLine("Response: {0}", jsonDoc.ToString());
+
+            //        // Return the JSON document:
+            //        return jsonDoc.ToString();
+            //    }
+            //}
         }
 
         bool IsGooglePlayServicesInstalled()
@@ -121,7 +146,7 @@ namespace JorjeiaAndroidApp
         private void FindViews()
         {
             phoneNumber1TextView = FindViewById<TextView>(Resource.Id.phoneNumber1TextView);
-            phoneNumber2TextView = FindViewById<ImageView>(Resource.Id.phoneNumber2TextView);
+            facebookTextView = FindViewById<ImageView>(Resource.Id.facebookTextView);
             back = FindViewById<Android.Widget.Button>(Resource.Id.backContactButton);
             text2 = FindViewById<TextView>(Resource.Id.callTextView);
             text1 = FindViewById<TextView>(Resource.Id.callText2View);
@@ -134,7 +159,7 @@ namespace JorjeiaAndroidApp
         private void HandleEvents()
         {
             phoneNumber1TextView.Click += PhoneNumber1TextView_Click;
-            phoneNumber2TextView.Click += PhoneNumber2TextView_Click;
+            facebookTextView.Click += facebookTextView_Click;
             back.Click += OpenGoogleMapsButton_Click;
         }
 
@@ -147,10 +172,10 @@ namespace JorjeiaAndroidApp
                 return;
             }
 
-            await GetCallPermissionAsync();
+            await GetPermissionAsync(Method.Call);
         }
 
-        private void PhoneNumber2TextView_Click(object sender, EventArgs e)
+        private void facebookTextView_Click(object sender, EventArgs e)
         {
             //Device.OpenUri(new Uri("fb://jorjeia/?fref=ts"));
             var uri = Android.Net.Uri.Parse("https://www.facebook.com/jorjeia/?fref=ts");
@@ -159,33 +184,53 @@ namespace JorjeiaAndroidApp
         }
 
 
-        private async Task GetCallPermissionAsync()
+        private async Task GetPermissionAsync(Method method)
         {
-            const string permission = Manifest.Permission.CallPhone;
-            if (CheckSelfPermission(Manifest.Permission.CallPhone) == (int)Permission.Granted)
+            try
             {
-                await Call();
-                return;
-            }
+                const string permission1 = Manifest.Permission.CallPhone;
+                const string permission2 = Manifest.Permission.AccessFineLocation;
+                const string permission3 = Manifest.Permission.AccessCoarseLocation;
+                const string permission4 = Manifest.Permission.Internet;
 
-            //need to request permission
-            if (ShouldShowRequestPermissionRationale(permission))
-            {
-
-                var callDialog = new AlertDialog.Builder(this);
-                callDialog.SetTitle("Въпрос");
-                callDialog.SetMessage("Разрешавате ли Jorjeia да има достъп до вашите повиквания.");
-                callDialog.SetNeutralButton("Да", delegate
+                if (CheckSelfPermission(Manifest.Permission.CallPhone) == (int)Permission.Granted && method == Method.Call)
                 {
-                    RequestPermissions(PermissionsLocation, RequestLocationId);
-                });
-                callDialog.SetNegativeButton("Не", delegate { });
+                    await Call();
+                    return;
+                }
+                if (CheckSelfPermission(Manifest.Permission.AccessFineLocation) == (int)Permission.Granted
+                    && CheckSelfPermission(Manifest.Permission.AccessCoarseLocation) == (int)Permission.Granted
+                    && CheckSelfPermission(Manifest.Permission.Internet) == (int)Permission.Granted
+                    && method == Method.OpenGoogleMap)
+                {
+                    await OpenGoogleMaps();
+                    return;
+                }
 
-                callDialog.Show();
-                return;
+                //need to request permission
+                if (ShouldShowRequestPermissionRationale(permission1) || ShouldShowRequestPermissionRationale(permission2) || ShouldShowRequestPermissionRationale(permission3) || ShouldShowRequestPermissionRationale(permission4))
+                {
+
+                    var callDialog = new AlertDialog.Builder(this);
+                    callDialog.SetTitle("Въпрос");
+                    callDialog.SetMessage("Разрешавате ли Jorjeia да има достъп.");
+                    callDialog.SetNeutralButton("Да", delegate
+                    {
+                        RequestPermissions(PermissionsLocation, RequestLocationId);
+                    });
+                    callDialog.SetNegativeButton("Не", delegate { });
+
+                    callDialog.Show();
+                    return;
+                }
+                //Finally request permissions with the list of permissions and Id
+                RequestPermissions(PermissionsLocation, RequestLocationId);
             }
-            //Finally request permissions with the list of permissions and Id
-            RequestPermissions(PermissionsLocation, RequestLocationId);
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private async Task Call()
@@ -222,63 +267,71 @@ namespace JorjeiaAndroidApp
 
         private async void OpenGoogleMapsButton_Click(object sender, EventArgs e)
         {
-            string text = await FetchWeatherAsync(url);
-            RootObject locations = JsonConvert.DeserializeObject<RootObject>(text);
+            ProgressDialog progressbar = new ProgressDialog(this);
+            progressbar.Indeterminate = true;
+            progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
+            progressbar.SetMessage("Моля изчакайте...");
+            progressbar.SetCancelable(false);
+            progressbar.Show();
 
-            string addres = "";
-            //Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:42.649184,23.379688");
-
-
-            if (apiClient.IsConnected)
+            if (CheckPhone())
             {
-                Location location = LocationServices.FusedLocationApi.GetLastLocation(apiClient);
-                if (location != null)
+                if ((int)Build.VERSION.SdkInt < 23)
                 {
-                    if (_currentLocation != null)
-                    {
-                        string message = "Не можем да определим вашето местонахождение. Моля опитайте по-късно.";
-                        Toast.MakeText(this, message, ToastLength.Long).Show();
-                        return;
-                    }
-                    _currentLocation = location;
+                    await OpenGoogleMaps();
+                    progressbar.Dismiss();
                 }
-                addres = ClosetLocation.GetClosetPoint(_currentLocation, locations);
+                else
+                {
+                    await GetPermissionAsync(Method.OpenGoogleMap);
+                    progressbar.Dismiss();
+                }
             }
-            else
-            {
-                Log.Info("LocationClient", "Please wait for client to connect");
-            }
-
-            //addres = "ул. 'Кръстю Раковски' 20, 1729 София";
-
-            Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:0,0?q=" + addres);
-
-            Intent mapIntent = new Intent(Intent.ActionView, jorjeiaLocationUri);
-            StartActivity(mapIntent);
         }
 
-        //private string FindStore(Location location)
-        //{
-        //   return GetClosetPoint(location,)
-        //}
+        private async Task OpenGoogleMaps()
+        {
+            try
+            {
+                string text = await FetchWeatherAsync(url);
+
+                RootObject locations = JsonConvert.DeserializeObject<RootObject>(text);
+
+                string addres = "";
+
+                if (apiClient.IsConnected)
+                {
+                    Location location = LocationServices.FusedLocationApi.GetLastLocation(apiClient);
+                    if (location != null)
+                    {
+                        if (_currentLocation != null)
+                        {
+                            string message = "Не можем да определим вашето местонахождение. Моля опитайте по-късно.";
+                            Toast.MakeText(this, message, ToastLength.Long).Show();
+                            return;
+                        }
+                        _currentLocation = location;
+                    }
+                    addres = ClosetLocation.GetClosetPoint(_currentLocation, locations);
+                }
+                else
+                {
+                    Log.Info("LocationClient", "Please wait for client to connect");
+                }
+
+                Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:0,0?q=" + addres);
+                Intent mapIntent = new Intent(Intent.ActionView, jorjeiaLocationUri);
+                StartActivity(mapIntent);
+                return; 
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         void InitializeLocationManager()
         {
-            //    _locationManager = (LocationManager)GetSystemService(LocationService);
-            //    Criteria criteriaForLocationService = new Criteria
-            //    {
-            //        Accuracy = Accuracy.Fine
-            //    };
-            //    IList<string> acceptableLocationProviders = _locationManager.GetProviders(criteriaForLocationService, true);
-
-            //    if (acceptableLocationProviders.Any())
-            //    {
-            //        _locationProvider = acceptableLocationProviders.First();
-            //    }
-            //    else
-            //    {
-            //        _locationProvider = string.Empty;
-            //    }
             _isGooglePlayServicesInstalled = IsGooglePlayServicesInstalled();
 
             if (_isGooglePlayServicesInstalled)
@@ -296,6 +349,29 @@ namespace JorjeiaAndroidApp
                 Toast.MakeText(this, "Google Play Services is not installed", ToastLength.Long).Show();
                 Finish();
             }
+        }
+
+        public bool CheckPhone()
+        {
+            Android.Net.ConnectivityManager connectivityManager = (Android.Net.ConnectivityManager)GetSystemService(ConnectivityService);
+            Android.Net.NetworkInfo activeConnection = connectivityManager.ActiveNetworkInfo;
+            bool isOnline = (activeConnection != null) && activeConnection.IsConnected;
+            if (isOnline == false)
+            {
+                Toast.MakeText(this, "Мобилните данни не са включени.", ToastLength.Long).Show();
+                return false;
+            }
+            else
+            {
+                LocationManager mlocManager = (LocationManager)GetSystemService(LocationService); ;
+                bool enabled = mlocManager.IsProviderEnabled(LocationManager.GpsProvider);
+                if (enabled == false)
+                {
+                    Toast.MakeText(this, "Местоположението не е включено.", ToastLength.Long).Show();
+                    return false;
+                }
+            }
+            return true;
         }
 
         protected override void OnResume()
@@ -363,41 +439,6 @@ namespace JorjeiaAndroidApp
         {
 
         }
-
-
-        //protected override void OnResume()
-        //{
-        //    base.OnResume();
-        //    _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
-        //}
-
-        //protected override void OnPause()
-        //{
-        //    base.OnPause();
-        //    _locationManager.RemoveUpdates(this);
-        //}
-
-
-
-        //void FindStore(double latitude, double longitude)
-        //{
-        //    ////System.Device.Location.GeoCoordinate
-        //    //var coord = new GeoCoordinate(latitude, longitude);
-        //    //var nearest = locations.Select(x => new GeoCoordinate(x.Latitude, x.Longitude))
-        //    //               .OrderBy(x => x.GetDistanceTo(coord))
-        //    //               .First();
-        //}
-
-        //public async void OnLocationChanged(Location location)
-        //{
-        //    _currentLocation = location;
-        //}
-
-        //public void OnProviderDisabled(string provider) { }
-
-        //public void OnProviderEnabled(string provider) { }
-
-        //public void OnStatusChanged(string provider, Availability status, Bundle extras) { }
     }
 }
 

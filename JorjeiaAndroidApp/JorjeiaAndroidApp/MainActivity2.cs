@@ -19,7 +19,6 @@ namespace JorjeiaAndroidApp
         private Button currentMissionButton;
         private Button about2Button;
         private Button contacts2Button;
-        private Button gallaryButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -35,7 +34,6 @@ namespace JorjeiaAndroidApp
             currentMissionButton.Click += CurrentMissionButton_Click;
             about2Button.Click += AboutButton_Click;
             contacts2Button.Click += ContactsButton_Click;
-            gallaryButton.Click += GalleryButton_Click;
         }
 
         
@@ -46,7 +44,6 @@ namespace JorjeiaAndroidApp
             newMission2Button = FindViewById<Button>(Resource.Id.newMission2Button);
             contacts2Button = FindViewById<Button>(Resource.Id.contacts2Button);
             about2Button = FindViewById<Button>(Resource.Id.about2Button);
-            gallaryButton = FindViewById<Button>(Resource.Id.galleryButton);
         }
 
         private void NewMissionButton_Click(object sender, EventArgs e)
@@ -74,14 +71,6 @@ namespace JorjeiaAndroidApp
         private void AboutButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AboutActivity));
-            intent.PutExtra("Main", 2);
-            StartActivity(intent);
-            Finish();
-        }
-
-        private void GalleryButton_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(GalleryActivity));
             intent.PutExtra("Main", 2);
             StartActivity(intent);
             Finish();

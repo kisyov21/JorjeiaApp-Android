@@ -22,7 +22,7 @@
         android:textColor="#005e09"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
-    <TextView
+<!--<TextView
         android:text="Следващата стъпка е по избор."
         android:id="@+id/textViewc2"
         android:layout_width="match_parent"
@@ -33,9 +33,9 @@
         android:textColor="#005e09"
         android:gravity="center_horizontal"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginRight="20dp" />-->
     <TextView
-        android:text="Ще Ви бъде предоставена възможност през нашето приложение да си направите снимка на засегнатата зона. Тя ще бъде съхранена в специално създадена за целта папка във Вашата галерия, с името 'Jorjeia'. Снимката може да бъде използвана след време, за да сравните прогреса от терапията с нашите продукти. "
+        android:text="Jorjeia Ви съветва, да направите снимки на засегнатите зони, преди да започнете цикъла на нанасяне, за да откриете разликите по-късно!"
         android:id="@+id/textViewc3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom">
-        <Button
+    <!--<Button
             android:text="Пропусни"
             android:textColor="#ffffff"
             android:background="@drawable/button_border_radius"
@@ -68,12 +68,12 @@
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp" />-->
         <Button
             android:text="Продължи"
             android:textColor="#ffffff"
             android:background="@drawable/button_border_radius"
-            android:id="@+id/nextCButton"
+            android:id="@+id/skipCButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

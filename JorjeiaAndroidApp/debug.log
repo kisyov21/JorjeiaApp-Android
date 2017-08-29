@@ -4,3 +4,6 @@
 [0528/165735.625:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
 [0528/165735.685:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0528/165736.184:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0828/222228.657:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
+[0828/222228.742:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0828/222228.813:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled

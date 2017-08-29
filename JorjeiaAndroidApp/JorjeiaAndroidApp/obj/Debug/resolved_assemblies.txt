@@ -75,7 +75,7 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Reflection.Extensions.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Reflection.Primitives.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ComponentModel.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Collections.Concurrent.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.ComponentModel.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.CSharp.dll
+F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\JorjeiaAndroidApp\obj\Debug\android\assets\Mono.Security.dll

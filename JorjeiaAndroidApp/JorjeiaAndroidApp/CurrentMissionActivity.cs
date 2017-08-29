@@ -16,7 +16,7 @@ namespace JorjeiaAndroidApp
     public class CurrentMissionActivity : Activity
     {
         private Button calendarButton;
-        private Button cameraButton;
+        //private Button cameraButton;
         private Button scheduleButton;
         private Button mainMenu2Button;
 
@@ -32,7 +32,7 @@ namespace JorjeiaAndroidApp
         {
             calendarButton.Click += CalendarButton_Click;
             mainMenu2Button.Click += MainMenu_Click;
-            cameraButton.Click += Camera_Click;
+            //cameraButton.Click += Camera_Click;
             scheduleButton.Click += Schedule_Click;
         }
 
@@ -56,17 +56,17 @@ namespace JorjeiaAndroidApp
             Finish();
         }
 
-        private void Camera_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(CameraActivity));
-            StartActivity(intent);
-            Finish();
-        }
+        //private void Camera_Click(object sender, EventArgs e)
+        //{
+        //    var intent = new Intent(this, typeof(CameraActivity));
+        //    StartActivity(intent);
+        //    Finish();
+        //}
 
         private void FindViews()
         {
             calendarButton = FindViewById<Button>(Resource.Id.calendarBtn);
-            cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
+            //cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
             scheduleButton = FindViewById<Button>(Resource.Id.scheduleBtn);
             mainMenu2Button = FindViewById<Button>(Resource.Id.mainMenu2btn);
         }

@@ -26,17 +26,3 @@ F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Xamarin.
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.csprojResolveAssemblyReference.cache
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll
 F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.pdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\obj\Debug\Calendar.dll.mdb
-F:\Repositories\JorjeiaApp-Android\JorjeiaAndroidApp\Calendar\bin\Debug\Calendar.dll.mdb

@@ -20,10 +20,9 @@ namespace JorjeiaAndroidApp
         private DateTime day = DateTime.Today;
 
         private Button calendarButton;
-        private Button cameraButton;
+        //private Button cameraButton;
         private Button scheduleButton;
         private Button mainMenu2Button;
-        private Button gallaryButton;
 
         private List<Mission> lstSource;
         private List<Schedule> lstSchedule;
@@ -159,7 +158,7 @@ namespace JorjeiaAndroidApp
         {
             calendarButton.Click += CalendarButton_Click;
             mainMenu2Button.Click += MainMenu_Click;
-            cameraButton.Click += Camera_Click;
+            //cameraButton.Click += Camera_Click;
             scheduleButton.Click += Schedule_Click;
         }
 
@@ -193,7 +192,7 @@ namespace JorjeiaAndroidApp
         private void FindViews2()
         {
             calendarButton = FindViewById<Button>(Resource.Id.calendarBtn);
-            cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
+            //cameraButton = FindViewById<Button>(Resource.Id.cameracCurrBtn);
             scheduleButton = FindViewById<Button>(Resource.Id.scheduleBtn);
             mainMenu2Button = FindViewById<Button>(Resource.Id.mainMenu2btn);
         }
@@ -207,7 +206,6 @@ namespace JorjeiaAndroidApp
             newMissionButton = FindViewById<Button>(Resource.Id.newMissionButton);
             aboutButton = FindViewById<Button>(Resource.Id.about);
             contactsButton = FindViewById<Button>(Resource.Id.contacts);
-            gallaryButton = FindViewById<Button>(Resource.Id.galleryButton);
         }
 
 
@@ -216,16 +214,8 @@ namespace JorjeiaAndroidApp
             newMissionButton.Click += NewMissionButton_Click;
             aboutButton.Click += AboutButton_Click;
             contactsButton.Click += ContactsButton_Click;
-            gallaryButton.Click += GalleryButton_Click;
         }
 
-        private void GalleryButton_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(GalleryActivity));
-            intent.PutExtra("Main", 2);
-            StartActivity(intent);
-            Finish();
-        }
         private void ContactsButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(ContactActivity));

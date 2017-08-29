@@ -44,7 +44,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp" />
         </RelativeLayout>
-        <RelativeLayout
+        <!--<RelativeLayout
             android:minWidth="25px"
             android:minHeight="25px"
             android:paddingTop="10dp"
@@ -59,7 +59,7 @@
                 android:id="@+id/cameracCurrBtn"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp" />
-        </RelativeLayout>
+        </RelativeLayout>-->
         <RelativeLayout
             android:minWidth="25px"
             android:minHeight="25px"
