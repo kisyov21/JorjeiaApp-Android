@@ -13,7 +13,7 @@ public abstract class CalendarPickerView_CellClickInterceptor
 		__md_methods = 
 			"n_onCellClicked:(Ljava/util/Date;)Z:GetOnCellClicked_Ljava_util_Date_Handler:Square.TimesSquare.CalendarPickerView/ICellClickInterceptorInvoker, Square.AndroidTimesSquare\n" +
 			"";
-		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+CellClickInterceptor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_CellClickInterceptor.class, __md_methods);
+		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+CellClickInterceptor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_CellClickInterceptor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public abstract class CalendarPickerView_CellClickInterceptor
 	{
 		super ();
 		if (getClass () == CalendarPickerView_CellClickInterceptor.class)
-			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+CellClickInterceptor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+CellClickInterceptor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

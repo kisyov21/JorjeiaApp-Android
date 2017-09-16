@@ -14,7 +14,7 @@ public class CalendarPickerView_OnDateSelectedListenerImplementor
 			"n_onDateSelected:(Ljava/util/Date;)V:GetOnDateSelected_Ljava_util_Date_Handler:Square.TimesSquare.CalendarPickerView/IOnDateSelectedListenerInvoker, Square.AndroidTimesSquare\n" +
 			"n_onDateUnselected:(Ljava/util/Date;)V:GetOnDateUnselected_Ljava_util_Date_Handler:Square.TimesSquare.CalendarPickerView/IOnDateSelectedListenerInvoker, Square.AndroidTimesSquare\n" +
 			"";
-		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+IOnDateSelectedListenerImplementor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_OnDateSelectedListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Square.TimesSquare.CalendarPickerView+IOnDateSelectedListenerImplementor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", CalendarPickerView_OnDateSelectedListenerImplementor.class, __md_methods);
 	}
 
 
@@ -22,7 +22,7 @@ public class CalendarPickerView_OnDateSelectedListenerImplementor
 	{
 		super ();
 		if (getClass () == CalendarPickerView_OnDateSelectedListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+IOnDateSelectedListenerImplementor, Square.AndroidTimesSquare, Version=1.6.5.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Square.TimesSquare.CalendarPickerView+IOnDateSelectedListenerImplementor, Square.AndroidTimesSquare, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

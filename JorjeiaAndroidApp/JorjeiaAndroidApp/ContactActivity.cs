@@ -267,25 +267,35 @@ namespace JorjeiaAndroidApp
 
         private async void OpenGoogleMapsButton_Click(object sender, EventArgs e)
         {
-            ProgressDialog progressbar = new ProgressDialog(this);
-            progressbar.Indeterminate = true;
-            progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
-            progressbar.SetMessage("Моля изчакайте...");
-            progressbar.SetCancelable(false);
-            progressbar.Show();
-
-            if (CheckPhone())
+            try
             {
-                if ((int)Build.VERSION.SdkInt < 23)
+
+                ProgressDialog progressbar = new ProgressDialog(this);
+                progressbar.Indeterminate = true;
+                progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
+                progressbar.SetMessage("Моля изчакайте...");
+                progressbar.SetCancelable(false);
+                //progressbar.Show();
+
+                if (CheckPhone())
                 {
-                    await OpenGoogleMaps();
-                    progressbar.Dismiss();
+                    if ((int)Build.VERSION.SdkInt < 23)
+                    {
+                        await OpenGoogleMaps();
+                        progressbar.Dismiss();
+                    }
+                    else
+                    {
+                        await GetPermissionAsync(Method.OpenGoogleMap);
+                        progressbar.Dismiss();
+                    }
                 }
-                else
-                {
-                    await GetPermissionAsync(Method.OpenGoogleMap);
-                    progressbar.Dismiss();
-                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
 
@@ -322,7 +332,7 @@ namespace JorjeiaAndroidApp
                 Android.Net.Uri jorjeiaLocationUri = Android.Net.Uri.Parse("geo:0,0?q=" + addres);
                 Intent mapIntent = new Intent(Intent.ActionView, jorjeiaLocationUri);
                 StartActivity(mapIntent);
-                return; 
+                return;
             }
             catch (Exception)
             {
