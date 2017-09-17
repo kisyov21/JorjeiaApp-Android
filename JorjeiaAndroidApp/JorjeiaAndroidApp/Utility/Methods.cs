@@ -32,14 +32,14 @@ namespace JorjeiaAndroidApp.Utility
             switch (type)
             {
                 case 1:
-                    while(days < 61)
+                    while(days < 60)
                     {
                         schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
                         days++;
                     }
                     break;
                 case 2:
-                    while (days < 91)
+                    while (days < 90)
                     {
                         schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
                         days++;

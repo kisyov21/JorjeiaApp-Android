@@ -62,6 +62,7 @@
       <HintPath>..\packages\Xamarin.Forms.2.3.4.270\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Java.Interop" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
@@ -204,13 +205,20 @@
       <HintPath>..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="XamForms.Controls.Calendar">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\MonoAndroid10\XamForms.Controls.Calendar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamForms.Controls.Calendar.Droid">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\MonoAndroid10\XamForms.Controls.Calendar.Droid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutActivity.cs" />
     <Compile Include="AlarmReceiver.cs" />
     <Compile Include="AskForNotificationActivity.cs" />
-    <Compile Include="CalendarActivity.cs" />
-    <Compile Include="CalendarViewRenderer.cs" />
+    <Compile Include="CalendarJorjeiaActivity.cs" />
     <Compile Include="CameraActivity.cs" />
     <Compile Include="CameraIntroActivity.cs" />
     <Compile Include="ContactActivity.cs" />
@@ -319,6 +327,9 @@
     <AndroidResource Include="Resources\layout\GalleryView2.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChangeStatusView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -334,9 +345,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calendar\Calendar.csproj">
-      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
-      <Name>Calendar</Name>
+    <ProjectReference Include="..\CalendarJorjeia\CalendarJorjeia.csproj">
+      <Project>{2ba6f3e8-69eb-4a5e-a55b-a0bf4e46aea1}</Project>
+      <Name>CalendarJorjeia</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

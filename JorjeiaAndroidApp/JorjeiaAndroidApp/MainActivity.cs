@@ -185,7 +185,7 @@ namespace JorjeiaAndroidApp
 
         private void CalendarButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(CalendarActivity));
+            var intent = new Intent(this, typeof(CalendarJorjeiaActivity));
             StartActivity(intent);
         }
 
