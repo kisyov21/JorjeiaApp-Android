@@ -25,11 +25,11 @@ namespace JorjeiaAndroidApp
         public override void OnReceive(Context context, Intent intent)
         {
             db = new DataBase();
-            lstSchedule = db.selectTableSchedule();
+            lstSchedule = db.SelectTableSchedule();
             DateTime today = DateTime.Today;
             if (today > lstSchedule[lstSchedule.Count - 1].Date)
             {
-                db.updateTableMission();
+                db.UpdateTableMission();
                 context.StopService(intent);
             }
             else

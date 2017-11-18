@@ -1,7 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@drawable/background_m11"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px" />
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/relativeLayout1"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="Ден "
+            android:textColor="#005e09"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDay"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Изпълнихте ли първото за деня препоръчано нанасяне от нас?"
+            android:textColor="#005e09"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textFirstView"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:text="Да"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/yesRadioButton1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <RadioButton
+                android:text="Не"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/noRadioButton1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+        <TextView
+            android:text="Изпълнихте ли второто за деня препоръчано нанасяне от нас?"
+            android:textColor="#005e09"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSecondView"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout1"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:text="Да"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/yesRadioButton2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <RadioButton
+                android:text="Не"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/noRadioButton2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+        <TextView
+            android:text="Изпълнихте ли третото за деня препоръчано нанасяне от нас?"
+            android:textColor="#005e09"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textThirdView"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout1"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:text="Да"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/yesRadioButton3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <RadioButton
+                android:text="Не"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#005e09"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/noRadioButton3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+            <Button
+                android:text="Напред"
+                android:id="@+id/next2DrinkWButton"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_border_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

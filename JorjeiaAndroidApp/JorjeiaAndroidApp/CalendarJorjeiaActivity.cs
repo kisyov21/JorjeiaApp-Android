@@ -20,21 +20,22 @@ namespace JorjeiaAndroidApp
             base.OnCreate(bundle);
 
             db = new DataBase();
-            db.createDataBase();
+            db.CreateDataBase();
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             Log.Info("DB_PATH", folder);
 
-            var schedule = db.selectTableSchedule();
+            var schedule = db.SelectTableSchedule();
+            var lstSource = db.SelectTableMission();
             List<ScheduleModel> data = new List<ScheduleModel>();
 
             foreach (var item in schedule)
             {
-                data.Add(new ScheduleModel { Id = item.Id, Date = item.Date, IsPassed = item.IsPassed, IsPassed2 = item.IsPassed2});
+                data.Add(new ScheduleModel { Id = item.Id, Date = item.Date, IsPassed = item.IsPassed, IsPassed2 = item.IsPassed2, IsPassed3 = item.IsPassed3});
             }
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             XamForms.Controls.Droid.Calendar.Init();
-            LoadApplication(new App(data));
+            LoadApplication(new App(data, lstSource[0].IsTwoTime));
         }
         public override void OnBackPressed()
         {

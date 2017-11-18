@@ -25,6 +25,13 @@ namespace JorjeiaAndroidApp
         DataBase db;
         private int type;
 
+        private int[] specificTypeOfMission =
+        {
+            1, 3, 4, 7, 8, 10, 12, 13, 15, 16, 17, 19, 20, 21, 23, 24, 25, 27, 28, 30, 32, 35, 36, 39, 40, 41, 43, 44,
+            47, 48, 49, 51, 52, 53, 55, 56
+        };
+
+        private bool isTwoTime = true;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -38,19 +45,36 @@ namespace JorjeiaAndroidApp
             var scar = Intent.GetIntExtra("Scar", 4);
             var weight = Intent.GetIntExtra("Weight", 50);
             var schedule = Methods.Calculate(age);
-
+            Mission miss;
             SetTypeOfMission(mission, skin, age, scar);
             
             //Create DataBase
             db = new DataBase();
-            var isOkS = db.deleteTableSchedule();
-            var isOkM = db.deleteTableMission();
-
-            Mission miss = new Mission() { hasMission = 1, typeMission = type, waterInMl = weight*30};
-
+            var isOkS = db.DeleteTableSchedule();
+            var isOkM = db.DeleteTableMission();
+            if (specificTypeOfMission.Contains(type))
+            {
+                miss = new Mission()
+                {
+                    HasMission = 1,
+                    TypeMission = type,
+                    WaterInMl = weight * 30,
+                    IsTwoTime = false
+                };
+            }
+            else
+            {
+                miss = new Mission()
+                {
+                    HasMission = 1,
+                    TypeMission = type,
+                    WaterInMl = weight * 30,
+                    IsTwoTime = true
+                };
+            }
             //TODO delete records from table
-            db.insertIntoTableMission(miss);
-            db.insertIntoTableSchedule(schedule);
+            db.InsertIntoTableMission(miss);
+            db.InsertIntoTableSchedule(schedule);
             // Create your application here
         }
 

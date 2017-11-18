@@ -17,9 +17,10 @@ namespace JorjeiaAndroidApp.Resources.Model
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public int hasMission { get; set; }
-        public int typeMission { get; set; }
-        public int waterInMl { get; set; }
+        public int HasMission { get; set; }
+        public int TypeMission { get; set; }
+        public int WaterInMl { get; set; }
+        public bool IsTwoTime { get; set; }
     }
 
     public class Schedule
@@ -29,10 +30,7 @@ namespace JorjeiaAndroidApp.Resources.Model
         public DateTime Date { get; set; }
         public bool IsPassed { get; set; }
         public bool IsPassed2 { get; set; }
-        //public Schedule(DateTime date)
-        //{
-        //    this.Date = date;
-        //    this.IsPassed = false;
-        //}
+        public bool IsPassed3 { get; set; }
+        public int Day { get; set; }
     }
 }

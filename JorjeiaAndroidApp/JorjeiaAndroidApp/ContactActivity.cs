@@ -50,7 +50,7 @@ namespace JorjeiaAndroidApp
 
         readonly string[] PermissionsLocation =
         {
-            Manifest.Permission.CallPhone,
+            //Manifest.Permission.CallPhone,
             Manifest.Permission.AccessFineLocation,
             Manifest.Permission.AccessCoarseLocation,
             Manifest.Permission.Internet
@@ -158,7 +158,7 @@ namespace JorjeiaAndroidApp
 
         private void HandleEvents()
         {
-            phoneNumber1TextView.Click += PhoneNumber1TextView_Click;
+            //phoneNumber1TextView.Click += PhoneNumber1TextView_Click;
             facebookTextView.Click += facebookTextView_Click;
             back.Click += OpenGoogleMapsButton_Click;
         }

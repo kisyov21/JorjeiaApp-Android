@@ -12,6 +12,7 @@ namespace CalendarJorjeia.Models
         public DateTime Date { get; set; }
         public bool IsPassed { get; set; }
         public bool IsPassed2 { get; set; }
-
+        public bool IsPassed3 { get; set; }
+        public bool IsTwoTime { get; set; }
     }
 }

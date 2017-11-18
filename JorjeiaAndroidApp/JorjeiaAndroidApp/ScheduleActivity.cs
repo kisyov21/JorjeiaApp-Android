@@ -24,6 +24,7 @@ namespace JorjeiaAndroidApp
         private string text;
         private Button newMission;
         private TextView textView;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -44,8 +45,8 @@ namespace JorjeiaAndroidApp
 
         private void SetText()
         {
-            int water = mission.waterInMl;
-            switch (mission.typeMission)
+            int water = mission.WaterInMl;
+            switch (mission.TypeMission)
             {
                 case 1:
                     text = "Здравейте!Това е персоналната  ни препоръка към използването на продукта „Мисия 1“ за постигане на оптимални резултати.Нанасяйте „Мисия 1“  три пъти на ден на чиста кожа, която е задължително овлажнена, масажирайте до пълна абсорбация.Минималният препоръчителен период за терапията е 60 дни!Сухата кожа е епидермално жадна и продукта ще попие бързо, заради високото съдържание на вода в него, а с хидратацията ще успеете да оставите маслата на „Мисия 1“ да помогнат на проблемната кожа да се възстановява. Горещо препоръчваме за по -добро овлажняване да ползвате „Мисия 3 - Хиалуронов Боди Коктейл“, специално създаден за подпомагане на действието на „Мисия 1“. Според вашите килограми, Вие трябва да приемате " + water + "мл. вода.";
@@ -244,7 +245,7 @@ namespace JorjeiaAndroidApp
 
         private void LoadData()
         {
-            lstSource = db.selectTableMission();
+            lstSource = db.SelectTableMission();
             mission = lstSource.First();
         }
     }

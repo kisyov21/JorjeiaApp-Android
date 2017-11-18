@@ -17,9 +17,9 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
 {
     public class DataBase
     {
-        string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+        readonly string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 
-        public bool createDataBase()
+        public bool CreateDataBase()
         {
             try
             {
@@ -37,7 +37,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public bool insertIntoTableMission(Mission newMission)
+        public bool InsertIntoTableMission(Mission newMission)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
         }
 
 
-        public bool insertIntoTableSchedule(List<Schedule> newSchedule)
+        public bool InsertIntoTableSchedule(List<Schedule> newSchedule)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
                     {
                         connection.Insert(item);
                     }
-                    
+
                     return true;
                 }
             }
@@ -76,7 +76,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public List<Mission> selectTableMission()
+        public List<Mission> SelectTableMission()
         {
             try
             {
@@ -92,7 +92,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public List<Schedule> selectTableSchedule()
+        public List<Schedule> SelectTableSchedule()
         {
             try
             {
@@ -108,13 +108,13 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public List<Schedule> selectActiveDatesSchedule()
+        public List<Schedule> SelectActiveDatesSchedule()
         {
             try
             {
                 using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
                 {
-                    return connection.Table<Schedule>().Where(s => s.IsPassed==true || s.IsPassed2 == true).ToList();
+                    return connection.Table<Schedule>().Where(s => s.IsPassed == true || s.IsPassed2 == true).ToList();
                 }
             }
             catch (SQLiteException ex)
@@ -124,7 +124,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public bool updateTableSchedule(DateTime date)
+        public bool UpdateTableSchedule(DateTime date)
         {
             TimeSpan end = new TimeSpan(12, 0, 0); //12 o'clock
             TimeSpan now = DateTime.Now.TimeOfDay;
@@ -151,7 +151,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public bool updateTableMission()
+        public bool UpdateTableMission()
         {
             try
             {
@@ -168,7 +168,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public bool deleteTableSchedule()
+        public bool DeleteTableSchedule()
         {
             try
             {
@@ -189,7 +189,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public bool deleteTableMission()
+        public bool DeleteTableMission()
         {
             try
             {
@@ -210,7 +210,7 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             }
         }
 
-        public List<Schedule> selectScheduleByDate(DateTime date)
+        public List<Schedule> SelectScheduleByDate(DateTime date)
         {
             try
             {
@@ -224,6 +224,32 @@ namespace JorjeiaAndroidApp.Resources.DataHelper
             {
                 Log.Info("SQLitEx", ex.Message);
                 return null;
+            }
+        }
+
+        public object UpdateDayTableSchedule(DateTime day, bool isPassed1, bool isPassed2, bool isPassed3, bool isTwoTime)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(System.IO.Path.Combine(folder, "Missions.db")))
+                {
+                    if (isTwoTime)
+                    {
+                        connection.Query<Mission>("UPDATE Schedule set IsPassed=?, IsPassed2=? Where Date=? ",
+                            isPassed1, isPassed2, day);
+                    }
+                    else
+                    {
+                        connection.Query<Mission>("UPDATE Schedule set IsPassed=?, IsPassed2=?, IsPassed3=? Where Date=? ",
+                            isPassed1, isPassed2, isPassed3, day);
+                    }
+                    return true;
+                }
+            }
+            catch (SQLiteException ex)
+            {
+                Log.Info("SQLitEx", ex.Message);
+                return false;
             }
         }
     }

@@ -20,28 +20,21 @@ namespace JorjeiaAndroidApp.Utility
             List<Schedule> schedule = new List<Schedule>();
             int days = 0;
             int type;
-            if (age <= 33)
-            {
-                type = 1;
-            }
-            else
-            {
-                type = 2;
-            }
+            type = age <= 33 ? 1 : 2;
 
             switch (type)
             {
                 case 1:
                     while(days < 60)
                     {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
+                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false, IsPassed3 = false, Day = days+1 });
                         days++;
                     }
                     break;
                 case 2:
                     while (days < 90)
                     {
-                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false });
+                        schedule.Add(new Schedule() { Date = DateTime.Today.AddDays(days), IsPassed = false, IsPassed2 = false, IsPassed3 = false, Day = days+1 });
                         days++;
                     }
                     break;

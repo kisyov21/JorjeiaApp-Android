@@ -4,6 +4,14 @@
              xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
              x:Class="CalendarJorjeia.CalendarXamlView">
     <ContentView.Content>
+        <!--<AbsoluteLayout
+            Height="150"
+            Margin="0,10,0,0"
+            Padding="40,0,40,0">
+            <Image 
+                Source ="/Resources/Small_logo.png">
+            </Image>
+        </AbsoluteLayout>-->
         <controls:Calendar 
             Padding="10,0,10,0" 
             SelectedBorderWidth="4" 

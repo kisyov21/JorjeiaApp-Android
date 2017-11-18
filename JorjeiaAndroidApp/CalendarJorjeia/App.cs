@@ -11,12 +11,12 @@ namespace CalendarJorjeia
         Calendar calendar;
         CalendarVM _vm;
 
-        public App(List<ScheduleModel> data)
+        public App(List<ScheduleModel> data, bool IsTwoTime)
         {
             var specialDates = new List<SpecialDate>();
             foreach (var item in data)
             {
-                if (item.IsPassed == true && item.IsPassed2 == true)
+                if ((item.IsPassed  && item.IsPassed2  && IsTwoTime) || (item.IsPassed  && item.IsPassed2  && item.IsPassed3))
                 {
                     specialDates.Add(
                         new SpecialDate(item.Date)
@@ -27,7 +27,7 @@ namespace CalendarJorjeia
                         }
                     );
                 }
-                else if (item.IsPassed == true || item.IsPassed2 == true)
+                else if (item.IsPassed || item.IsPassed2  && IsTwoTime)
                 {
                     specialDates.Add(
                         new SpecialDate(item.Date)
@@ -44,6 +44,27 @@ namespace CalendarJorjeia
                                            new Pattern{ WidthPercent = 1f, HightPercent = 0.50f, Color = Color.White},
                                            new Pattern{ WidthPercent = 1f, HightPercent = 0.50f, Color = Color.LightGreen}
                                        }
+                            }
+                        }
+                    );
+                }
+                else if (item.IsPassed  || item.IsPassed2 || item.IsPassed3)
+                {
+                    specialDates.Add(
+                        new SpecialDate(item.Date)
+                        {
+                            //BackgroundColor = Color.LightGreen,
+                            TextColor = Color.Accent,
+                            BorderColor = Color.White,
+                            BorderWidth = 4,
+                            Selectable = true,
+                            BackgroundPattern = new BackgroundPattern(1)
+                            {
+                                Pattern = new List<Pattern>
+                                {
+                                    new Pattern{ WidthPercent = 1f, HightPercent = 0.50f, Color = Color.White},
+                                    new Pattern{ WidthPercent = 1f, HightPercent = 0.50f, Color = Color.LightGreen}
+                                }
                             }
                         }
                     );
@@ -92,7 +113,7 @@ namespace CalendarJorjeia
                 //BorderColor = Color.Transparent,
                 //OuterBorderWidth = 0,
                 //SelectedBorderWidth = 1,
-                ShowNumOfMonths = 3,
+                ShowNumOfMonths = 1,
                 EnableTitleMonthYearView = true,
                 WeekdaysTextColor = Color.Teal,
                 StartDay = DayOfWeek.Monday,
